@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../90%20HL7/00%20Standard%20-%20C-CDA/20130409%20C-CDA%20R1dot1_2012JUL/Updated_CDA_Schema_Files_Extension_Support/CDA_Schema_Files/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3"
+ xmlns:cda="urn:hl7-org:v3"
+ xmlns:sdtc="urn:hl7-org:sdtc">
+   <realmCode code="US"/>
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>  <!-- C-CDA -->
+   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>  <!-- CCD -->
+   <id root="2.16.840.1.113883.3.3208.101.1" extension="20130607100315-CCDA-CCD"/>
+   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/> 
+   <title>CDA PRO C-CDA CCD Skeleton That Validates on TTT</title>    
+   <effectiveTime value="20130607000000-0000"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="en-US"/>
+   <recordTarget>
+      <patientRole>
+		<id root="2.16.840.1.113883.3.3208.101.2" extension="20130607100800-Patient1"/>
+        <addr use="HP">
+            <streetAddressLine>1111 StreetName St.</streetAddressLine>
+            <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="tel:+1(301)111-1111" use="HP"/>
+         <patient>
+            <name use="L"><given>Patient</given><family>One</family></name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
+            <birthTime value="19300911"/>
+            <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+            <raceCode code="2106-3" displayName="White"
+               codeSystem="2.16.840.1.113883.6.238"
+               codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
+               codeSystem="2.16.840.1.113883.6.238"
+               codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <languageCommunication>
+				<languageCode code="eng"/>
+				<modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+				<proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+			</languageCommunication>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author>
+      <time value="20130607000000"/>
+      <assignedAuthor>
+         <id extension="22222" root="2.16.840.1.113883.4.6"/>
+         <code code="207QA0505X" codeSystem="2.16.840.1.113883.6.101"
+            displayName="Adult Medicine" codeSystemName="NUCC"/>
+         <addr use="HP">
+            <streetAddressLine>2222 StreetName St.</streetAddressLine>
+            <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="tel:+1(301)222-2222" use="WP"/>
+         <assignedPerson>
+            <name>
+               <given>Doctor</given>
+               <family>Second</family>
+               <suffix>MD</suffix>
+            </name>
+         </assignedPerson>
+		</assignedAuthor>
+   </author>
+   <dataEnterer>
+      <assignedEntity>
+		 <id extension="33333" root="2.16.840.1.113883.4.6"/>
+         <code code="364SA2200X" displayName="Adult Health" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"/>
+         <addr use="WP">
+            <streetAddressLine>3333 StreetName St.</streetAddressLine>
+            <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="tel:+1(301)333-3333" use="WP"/>
+         <assignedPerson>
+            <name>
+               <given>Nurse</given>
+               <family>Tertiary</family>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </dataEnterer>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+			<id extension="44444" root="2.16.840.1.113883.4.6"/>
+            <name>CDA PRO Fictional Hospital</name>
+            <telecom value="tel:+1(301)444-4444" use="WP"/>
+            <addr use="WP">
+				<streetAddressLine>4444 StreetName St.</streetAddressLine>
+				<city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+				<country>US</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator>
+      <time value="20130607000000"/>
+	  <signatureCode code="S"/>
+      <assignedEntity>
+		<id root="2.16.840.1.113883.3.3208.101.3" extension="20130607102400-Authenticator1"/>
+        <addr use="WP">
+			<streetAddressLine>5555 StreetName St.</streetAddressLine>
+			<city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+			<country>US</country>
+         </addr>
+         <telecom value="tel:+1(301)555-5555" use="WP"/>
+         <assignedPerson>
+            <name>
+               <given>Physician</given>
+               <family>Fifthly</family>
+               <suffix>MD</suffix>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </legalAuthenticator>
+   <documentationOf>
+      <serviceEvent classCode="PCPR">
+         <effectiveTime>
+            <low value="19330316"/>
+            <high value="20130607"/>
+         </effectiveTime>
+         <performer typeCode="PRF">
+            <assignedEntity>
+               <id extension="66666" root="2.16.840.1.113883.4.6"/>
+               <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
+                  displayName="Cardiovascular Disease"/>
+               <addr>
+					<streetAddressLine>6666 StreetName St.</streetAddressLine>
+					<city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+					<country>US</country>
+               </addr>
+               <telecom value="tel:+1(301)666-6666" use="WP"/>
+               <assignedPerson>
+                  <name>
+                     <given>Heartly</given>
+                     <family>Sixer</family>
+                     <suffix>MD</suffix>
+                  </name>
+               </assignedPerson>
+            </assignedEntity>
+         </performer>
+      </serviceEvent>
+   </documentationOf>
+   <!-- CDA Body -->
+   <component>
+      <structuredBody>
+         <!-- Allergies Section -->
+         <component>
+            <section>
+				<templateId root="2.16.840.1.113883.10.20.22.2.6.1"/> <!-- Allergies (entries required) section -->
+				<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+				<title>ALLERGIES</title>
+				<text><content ID="allergy1">No Information About <content ID="adverseEvent1">Allergies</content></content></text>
+				<entry typeCode="DRIV">
+					<act classCode="ACT" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.30"/> <!-- Allergy Problem Act entry -->
+						<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607104400-AllergyProblem"/>
+						<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+						<text><reference value="#allergy1"></reference></text> <!-- Added text here at the beginning of the Clinical Statement. -->
+						<statusCode code="active"/>
+						<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- Up until now. -->
+						<entryRelationship typeCode="SUBJ">
+							<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">  
+								<templateId root="2.16.840.1.113883.10.20.22.4.7"/> <!-- Allergy - Intolerance Observation -->
+								<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607105900-AllergyObservation"/>
+								<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+								<statusCode code="completed"/>
+								<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- At this time. -->
+								<value xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Allergy to substance">
+									<originalText><reference value="#adverseEvent1"/></originalText>
+								</value>
+								<participant typeCode="CSM"> <!-- Participant added to meet "SHOULD" and avoid validator warning -->
+									<participantRole classCode="MANU">
+										<playingEntity classCode="MMAT">
+											<code nullFlavor="NI">
+												<originalText><reference value="#allergy1"/></originalText> <!-- I don't think this is needed in this case. I would only have used it if you still populated a table strucute. 
+													That was always present, even if all the columns of the single row said NI.-->
+											</code>
+										</playingEntity>
+									</participantRole>
+								</participant>
+								<entryRelationship typeCode="MFST" inversionInd="true">
+								  <observation classCode="OBS" moodCode="EVN" nullFlavor="NI"> 
+									 <templateId root="2.16.840.1.113883.10.20.22.4.9"/> <!-- Reaction Observation - added to meet "SHOULD" and avoid validator warning -->
+									 <id root="2.16.840.1.113883.3.3208.101.10" extension="20130607151500-ReactionObservation"/>
+									 <code nullFlavor="NI">
+								  	<!--<originalText><reference value="#allergy1"/></originalText>--> <!-- I don't think this is needed in this case. I would only have used it if you still populated a table strucute. 
+								  	That was always present, even if all the columns of the single row said NI.-->
+									 </code>
+									 <text><reference value="#allergy1"/></text> <!-- I don't agree a text element should be used/equired here. -->
+									 <statusCode code="completed"/>
+								  	<effectiveTime><low nullFlavor="NI"/><high nullFlavor="NI"/></effectiveTime> 
+								  	<value xsi:type="CD" nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/> <!-- using this SNOMED code to meet SHALL requirement for code -->
+									 <entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+										   <templateId root="2.16.840.1.113883.10.20.22.4.8"/> <!-- Severity Observation  for the Reaction -->
+											<code xsi:type="CE" code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/> <!-- I removed this nullFlavor="NI".  Not sure what that would mean. -->
+										   <text><reference value="#allergy1"/></text> <!-- I disagree that this text element should be used. -->
+										   <statusCode code="completed"/>
+										   <value xsi:type="CD" nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/> <!-- using this SNOMED code to meet SHALL requirement for code -->
+										</observation>
+									 </entryRelationship>
+								  </observation>
+							   </entryRelationship>
+							   <entryRelationship typeCode="SUBJ" inversionInd="true">
+									<observation classCode="OBS" moodCode="EVN">
+									   <templateId root="2.16.840.1.113883.10.20.22.4.8"/> <!-- Severity Observation  for the Allergy- added to meet "SHOULD" and avoid validator warning -->
+										<code xsi:type="CE" code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/> <!-- Removed this nullFlavor="NI" -->
+									   <text><reference value="#allergy1"/></text> <!-- Disagree with this text element being used here. -->
+									   <statusCode code="completed"/>
+										<value xsi:type="CD" nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/> <!-- using this SNOMED code to meet SHALL requirement for code -->
+									</observation>
+								</entryRelationship>
+							</observation>
+						</entryRelationship>
+					</act>
+				</entry>
+            </section>
+         </component>
+         <!-- Medication Section -->
+         <component>
+            <section>
+				<templateId root="2.16.840.1.113883.10.20.22.2.1.1"/> <!-- Medication Section (entries required) -->
+				<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+				<title>MEDICATIONS</title>
+				<text><content ID="meds1">No Information About Medications</content></text>
+			   	<entry typeCode="DRIV">
+					<substanceAdministration moodCode="EVN" classCode="SBADM" nullFlavor="NI">
+						<templateId root="2.16.840.1.113883.10.20.22.4.16"/> <!-- Medication Activity -->
+						<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607111500-MedicationActivity"/>
+						<text><reference value="#meds1"/></text>
+						<statusCode code="completed"/>
+						<effectiveTime xsi:type="IVL_TS"><low nullFlavor="NI"/><high nullFlavor="NI"/></effectiveTime>
+						<effectiveTime xsi:type="PIVL_TS" operator="A" nullFlavor="NI"/> <!-- Added to meet the "SHOULD" and avoid the warning from the validator -->
+						<doseQuantity nullFlavor="NI"/> <!-- Added to meet the "SHOULD" and avoid the warning from the validator -->
+						<consumable>
+							<manufacturedProduct classCode="MANU">
+								<templateId root="2.16.840.1.113883.10.20.22.4.23"/> <!-- Medication Information -->
+								<manufacturedMaterial>
+									<code nullFlavor="NI">
+										<originalText><reference value="#meds1"/></originalText> <!-- I don't this this should need to be present unless you are populating a table with NI-->
+									</code>
+								</manufacturedMaterial>
+							</manufacturedProduct>
+						</consumable>
+					</substanceAdministration>
+				</entry>
+            </section>
+         </component>
+         <!-- Problem Section -->
+         <component>
+            <section>
+				<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/> <!-- Problem Section with Coded Entries Required -->
+				<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+				<title>PROBLEMS</title>
+				<text><content ID="problems1">No Information About <content ID="problemType1">Problems</content></content></text>
+				<entry typeCode="DRIV">
+					<act classCode="ACT" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.3"/> <!-- Problem Concern Act (Condition) -->
+						<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607113300-ProblemConcern"/>
+						<code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass"/>
+						<text></text>
+						<statusCode code="completed"/> <!-- Do you have any active concerns?  No. Brian's example shows the concern as active.-->
+						<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- At this time. This isn't open into the future. You would need to check this issue again in the future. -->
+						<entryRelationship typeCode="SUBJ">
+							<observation classCode="OBS" moodCode="EVN"> <!-- I removed this nullFlavor="NI" not sure why it was there. In documenting this situation, it was observed that there was no information about problems.-->
+								<templateId root="2.16.840.1.113883.10.20.22.4.4"/> <!-- Problem Observation -->
+								<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607113430-ProblemObservation"/>
+								<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem">
+									<originalText><reference value="#problemType1"></reference></originalText>
+								</code>
+								<text><reference value="#problems1"/></text> <!-- I don't this this text element should be populated.  I think the text element of the outer entry should encompass all the sub-entry parts of the clinical statement. -->
+								<statusCode code="completed" /> 
+								<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- Up until now. -->
+								<value xsi:type="CD" nullFlavor="NI" /> 
+							</observation>
+						</entryRelationship>
+					</act>
+				</entry>
+            </section>
+         </component>
+         <!-- Procedures Section -->
+         <component>
+            <section>
+				<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/> <!-- Procedures Section with Coded Entries Required-->
+				<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+				<title>PROCEDURES</title>
+				<text><content ID="procedures1">No Information About Procedures</content></text>
+				<entry typeCode="DRIV">
+					<procedure classCode="PROC" moodCode="EVN"> <!-- I think it makes more sense for this to be an Procedure than an Act -->
+						<!--<templateId root="2.16.840.1.113883.10.20.22.4.12"/>--> <!-- Procedure Activity Act-->
+						<templateId root="2.16.840.1.113883.10.20.22.4.14"/> <!-- Procedure Activity Procedure-->
+						<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607114600-ProcedureActivity"/>
+						<code xsi:type="CE" nullFlavor="NI"> 
+							<originalText><reference value="#procedures1"/></originalText>
+						</code>
+						<statusCode code="completed" /> 
+						<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- Up until now. -->
+						<targetSiteCode nullFlavor="NI"  codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></targetSiteCode>
+						<performer> <!-- Added to meet "SHOULD" requirment and avoid validator warning -->
+							<assignedEntity>
+								<id root="2.16.840.1.113883.3.3208.101.3" extension="20130607154800-UnknownPersonnel"/>
+								<addr nullFlavor="NI"/>
+								<telecom nullFlavor="NI"/>
+								<representedOrganization nullFlavor="NI">
+									<id root="2.16.840.1.113883.3.3208.101.5" extension="20130607155400-UnknownOrg" />
+									<telecom nullFlavor="NI" />
+									<addr nullFlavor="NI" />
+								</representedOrganization>
+							</assignedEntity>
+						</performer>
+					</procedure>
+				</entry>
+            </section>
+        </component>
+        <!-- Results Section -->
+        <component>
+            <section>
+				<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/> <!-- Results Section with Coded Entries Required-->
+				<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+				<title>RESULTS</title>
+				<text><content ID="results1">No Information About Results</content></text>
+				<entry typeCode="DRIV">
+					<organizer classCode="CLUSTER" moodCode="EVN">
+						<templateId root="2.16.840.1.113883.10.20.22.4.1"/> <!-- Result Organizer -->
+						<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607113300-ResultOrganizer"/>
+						<code xsi:type="CE" nullFlavor="NI"/>
+						<statusCode code="completed"/>
+						<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- Up until now. --> <!-- Brian's sample had a weird date in here. -->
+						<component>
+							<observation classCode="OBS" moodCode="EVN" > <!-- removed this: nullFlavor="NI"-->
+								<templateId root="2.16.840.1.113883.10.20.22.4.2"/> <!-- Results Observation -->
+								<id nullFlavor="NI"/>
+								<code nullFlavor="NI" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> <!-- No code here -->
+								<text><reference value="#results1"/></text>
+								<statusCode code="completed"/>
+								<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- Up until now. -->
+								<value  xsi:type="CD" nullFlavor="NI"/>
+								<interpretationCode nullFlavor="NI"/>
+							</observation>
+						</component>
+					</organizer>
+               </entry>
+            </section>
+        </component>
+		<!-- Plan of Care Section -->
+        <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.22.2.10"/> <!-- Plan of Care Section-->
+               <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
+               <title>PLAN OF CARE</title>
+               <text>No Information About Plan of Care</text>
+            </section>
+        </component>
+		<!-- Social History (with Smoking Status Observation) -->
+        <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.22.2.17"/> <!-- Social History Section -->
+               <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History"/>
+			   <title>SOCIAL HISTORY</title>
+               <text><content ID="socialhist1">No Information About Social History</content></text>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"> <!-- Removed nullFlavor="NI" -->
+                  	<templateId root="2.16.840.1.113883.10.20.22.4.85"/> <!-- Conforms to Tobacco Use template-->
+                  	<templateId root="2.16.840.1.113883.10.20.22.4.78"/> <!-- Smoking Status Observation 2.16.840.1.113883.10.20.22.4.78-->
+                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  	 <text><reference value="#socialhist1"></reference></text>
+                     <statusCode code="completed"/>
+                  	<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime> <!-- I disagree with the template - The status can at best be observed up until now. I think it documents 
+                  	the smoking status up until this point in time.-->
+                     <value xsi:type="CD" nullFlavor="NI"  codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+		<!-- Vital Signs Section (entries required) -->
+		<component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/> <!-- Vital Signs (entries required) -->
+               <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+               <title>VITAL SIGNS</title>
+               <text><content ID="vitalsigns1">No Information About Vital Signs</content></text>
+               <entry typeCode="DRIV">
+                  <organizer classCode="CLUSTER" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.26" /> <!-- Vital Signs Organizer -->
+					<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607125100-VitalSignsOrganizer"/>
+					<code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+					<statusCode code="completed"/>
+                  	<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime>
+					<component>
+						<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+							<templateId root="2.16.840.1.113883.10.20.22.4.27"/> <!-- Vital Signs Observation -->
+							<id root="2.16.840.1.113883.3.3208.101.10" extension="20130607125100-VitalSignsObservation"/>
+							<code nullFlavor="NI">
+								<originalText><reference value="#vitalsigns1"></reference></originalText>
+							</code>
+							<text><reference value="#vitalsigns1"/></text>
+							<statusCode code="completed"/>
+							<effectiveTime><low nullFlavor="NI"/><high value="20130607000000-0000"/></effectiveTime>
+							<value xsi:type="PQ" nullFlavor="NI"/>
+						</observation>
+					</component>
+				  </organizer>
+			   </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>
+
