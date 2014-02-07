@@ -46,8 +46,9 @@
                         <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
                         <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
                         <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
-                        <!--<value/>--> <!-- There is no concept available that can populate this value element. -->
-                        <!-- including no value causes a validation error. -->
+                        
+                        <!--<value/>--> <!-- There is no concept available in the specified value set that can populate this value element. -->
+                        <!-- including no value causes a validation error because the current conformance statement has a SHALL [1..1]-->
                         <author>
                             <time value="20100103"/>
                             <assignedAuthor>
