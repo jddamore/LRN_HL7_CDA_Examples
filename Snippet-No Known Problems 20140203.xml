@@ -10,7 +10,7 @@
                 Concern Tracker End Date: 
                 Concern Status: Active
                 <content ID="problems1">No known <content ID="problemType1">problems.</content></content>
-                <content ID="problems2">No <content ID="problemType2">back pain.</content></content>
+                <content ID="problems2">No history of <content ID="problemType2">back pain.</content></content>
             </content>
         </text>
         <entry typeCode="DRIV">
@@ -59,7 +59,7 @@
                         <id root="4adc1021-7b14-11db-9fe1-0800200c9a67"/>
                         <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                         <text><reference value="#problems1"></reference></text>
-                        <statusCode code="active"/>
+                        <statusCode code="completed"/>
                         <effectiveTime>
                             <low value="20130607160506"/>
                         </effectiveTime>
@@ -114,7 +114,7 @@
                         <text><reference value="#problems2"></reference></text>
                         <statusCode code="completed"/>
                         <effectiveTime>
-                            <low value="19300911"/> <!-- Over the course of the patient's life, they have had accute lower back pain. -->
+                            <low value="19300911"/> <!-- Over the course of the patient's lifetime -->
                             <high value="20130607160506"/>
                         </effectiveTime>
                         <!-- The time when this was biologically relevant ie True for the patient. -->
