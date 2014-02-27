@@ -1,35 +1,38 @@
 <!-- Medication Section -->
-    <section>
-        <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/> <!-- Medication Section with Coded Entries Required -->
-        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
-        <title>MEDICATIONS</title>
-        <text>
-            <content ID="Medication_List">Medication List:
-                As of Date: 06/07/2013 16:05:06
-                <content ID="Med_1">Patient <content ID="Med_1_ng">not taking</content> anything.</content>
-            </content>
-        </text>
-<entry typeCode="DRIV">
-    <!-- The use of negationInd corresponds with the newer Act.NegationInd -->
-    <!-- The negationInd = true negates the act which is negated is further narrowed by the information in the code, effectiveTime, and other coded concepts -->
-    <substanceAdministration classCode="SBADM" moodCode="INT" negationInd=”true”>
-        <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-        <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
-        <code/> <!-- A vocabulary binding for the code element has is not established.-->
-        <!-- 
-            <code code="182816009"
-            displayName="Therapeutic prescription"
-            codeSystem="2.16.840.1.113883.6.96"
-            codeSystemName="SNOMED CT"/>
-         -->
-        <statusCode code="active"/> <!— This is an on-going intent, not and EVN, so the right status is Active.-->
-        <effectiveTime>
-            <low value="20130607160506"/> <!— What should we do with timing? -->
-        </effectiveTime>
-        <!—Any other required elements are populated with nullFlavor=”NI” -->
-        <consumable nullFlavor=”NI”> <!—prevents the need to carry the structure below the consumable-->
-        <author>
-            <time value="20130607160506"/>
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/> <!-- Medication Section with Coded Entries Required -->
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <content ID="Medication_List">Medication List:
+            As of Date: 06/07/2013 16:05:06
+            <content ID="Med_1">Patient <content ID="Med_1_ng">not taking</content> anything.</content>
+        </content>
+    </text>
+    <entry typeCode="DRIV">
+        <!-- The use of negationInd corresponds with the newer Act.NegationInd -->
+        <!-- The negationInd = true negates the act which is negated is further narrowed by the information in the code, effectiveTime, and other coded concepts -->
+        <substanceAdministration classCode="SBADM" moodCode="INT" negationInd="true">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+            <code/> <!-- A vocabulary binding for the code element has is not established.-->
+            <!-- 
+                <code code="182816009"
+                displayName="Therapeutic prescription"
+                codeSystem="2.16.840.1.113883.6.96"
+                codeSystemName="SNOMED CT"/>
+            -->
+            <statusCode code="active"/> <!-- This is an on-going intent, not and EVN, so the right status is Active.-->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20130607160506"/>
+            </effectiveTime>
+            <!--Any other required elements are populated with nullFlavor=”NI” -->
+            <consumable nullFlavor="NI">
+                <manufacturedProduct nullFlavor="NI">
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <time value="20130607160506"/>
                 <assignedAuthor>
                     <id extension="99999999" root="2.16.840.1.113883.4.6"/>
                     <code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
@@ -42,9 +45,7 @@
                         </name>
                     </assignedPerson>
                 </assignedAuthor>
-        </author>
-            
-    </substanceAdministration>
-</entry>
-        </section>
-
+            </author>
+        </substanceAdministration>
+    </entry>
+</section>
