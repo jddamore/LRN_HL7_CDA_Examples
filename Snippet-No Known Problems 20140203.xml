@@ -10,7 +10,7 @@
                 Concern Tracker End Date: 
                 Concern Status: Active
                 <content ID="problems1">No known <content ID="problemType1">problems.</content></content>
-                <content ID="problems2">No history of <content ID="problemType2">back pain.</content></content>
+                <content ID="problems2">No <content ID="problemType2">back pain.</content></content>
             </content>
         </text>
         <entry typeCode="DRIV">
@@ -114,8 +114,7 @@
                         <text><reference value="#problems2"></reference></text>
                         <statusCode code="completed"/>
                         <effectiveTime>
-                            <low value="19300911"/> <!-- Over the course of the patient's lifetime -->
-                            <high value="20130607160506"/>
+                            <low value="20130607160506"/>
                         </effectiveTime>
                         <!-- The time when this was biologically relevant ie True for the patient. -->
                         <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
@@ -143,29 +142,6 @@
                                     <name>
                                         <given>Heartly</given>
                                         <family>Sixer</family>
-                                        <suffix>MD</suffix>
-                                    </name>
-                                </assignedPerson>
-                            </assignedAuthor>
-                        </author>
-                        <author>
-                            <!-- What does "persistant authorship look like? -->
-                            <!-- Another documented observation of no lower back pain made at an earlier time.-->
-                            <time value="20100103101526"/>
-                            <assignedAuthor>
-                                <id extension="66667" root="2.16.840.1.113883.4.6"/>
-                                <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
-                                    displayName="Cardiovascular Disease"/>
-                                <addr>
-                                    <streetAddressLine>6666 StreetName St.</streetAddressLine>
-                                    <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
-                                    <country>US</country>
-                                </addr>
-                                <telecom value="tel:+1(301)666-6666" use="WP"/>
-                                <assignedPerson>
-                                    <name>
-                                        <given>Mary</given>
-                                        <family>Jones</family>
                                         <suffix>MD</suffix>
                                     </name>
                                 </assignedPerson>
