@@ -226,35 +226,29 @@
          		<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
          		<title>MEDICATIONS</title>
          		<text>
-         			<content ID="Medication_List">Medication List:
-         				As of Date: 06/07/2013 16:05:06
-         				<content ID="Med_1">Patient <content ID="Med_1_ng">not taking</content> medications.</content>
+         			<content ID="Medication_List">Medication List (As of 06/07/2013 16:05:06):<br/>
+         				Patient <content ID="Med_1_ng">not taking</content> <content ID="Med_1">medications.</content>
          			</content>
          		</text>
-         		<entry typeCode="DRIV">
+         		<entry typeCode="COMP">
          			<!-- The use of negationInd corresponds with the newer Act.NegationInd -->
          			<!-- The negationInd = true negates the act which is negated is further narrowed by the information in the code, effectiveTime, and other coded concepts -->
-         			<substanceAdministration classCode="SBADM" moodCode="INT" negationInd="true">
+         			<substanceAdministration classCode="SBADM" moodCode="INT" negationInd="true"> <!-- A Medication list expresses an on-going intent, not and record of what was actually taken. -->
          				<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
          				<id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
          				<code/> <!-- A vocabulary binding for the code element has is not established.-->
-         				<!-- 
-         					<code code="182816009"
-         					displayName="Therapeutic prescription"
-         					codeSystem="2.16.840.1.113883.6.96"
-         					codeSystemName="SNOMED CT"/>
-         				-->
-         				<statusCode code="active"/> <!-- This is an on-going intent, not and EVN, so the right status is Active.-->
+         				<statusCode code="active"/> <!-- This is an on-going action, so the right status is 'active'-->
          				<effectiveTime xsi:type="IVL_TS">
          					<low value="20130607160506"/>
-         					<high value="20130607160506"/>
          				</effectiveTime>
-         				<!--Any other required elements are populated with nullFlavor=”NI” -->
          				<consumable>
          					<manufacturedProduct classCode="MANU">
          						<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
          						<manufacturedMaterial>
          							<code nullFlavor="OTH" codeSystem="2.16.840.1.113883.6.88">
+         								<originalText>
+         									<reference value="#Med_1"></reference>
+         								</originalText>
          								<translation code="410942007" displayName="drug or medication"
          									codeSystem="2.16.840.1.113883.6.96"
          									codeSystemName="SNOMED CT"/>
