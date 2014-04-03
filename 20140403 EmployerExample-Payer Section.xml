@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../../05%20Professional/90%20HL7/00%20Standard%20-%20C-CDA/20130409%20C-CDA%20R1dot1_2012JUL/Updated_CDA_Schema_Files_Extension_Support/CDA_Schema_Files/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3"
+ xmlns:cda="urn:hl7-org:v3"
+ xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <id root="1.3.6.1.4.1.12045.1.100.10" extension="5e83eff8-68de-4721-8d3c-94ef7f98e48c"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
+  <title>Intuit Healthcare Patient Form Data Extract</title>
+  <effectiveTime value="20140325162115.303-0400"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="123"/> <!-- This id binds to the patient role -->
+      <addr><streetAddressLine>Buck Jones Road</streetAddressLine><city>Raleigh</city><state>NC</state><postalCode>12345</postalCode></addr>
+      <telecom value="tel:+1(123)456-7980"/>
+      <patient>
+        <name><family>DE7933_1</family><given>DE7933_1</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19870101"/>
+        <ethnicGroupCode nullFlavor="UNK">
+          <originalText>Unknown</originalText>
+        </ethnicGroupCode>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20140325162115.305-0400"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="NA"/>
+      <id root="1.3.6.1.4.1.12045.1.30.1" extension="97c2f15c-e46d-48f6-bff9-1da69df968d1"/>
+      <addr><streetAddressLine>Buck Jones Road</streetAddressLine><city>Raleigh</city><state>NC</state><postalCode>12345</postalCode></addr>
+      <telecom value="tel:+1(123)456-7980"/>
+      <assignedPerson>
+        <name><family>DE7933_1</family><given>DE7933_1</given></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <author>
+    <time value="20140325162115.306-0400"/>
+    <assignedAuthor>
+      <id root="1.3.6.1.4.1.12045.1" extension="EHDC"/>
+      <addr><streetAddressLine>5501 Dillard Dr</streetAddressLine><city>Cary</city><state>NC</state><postalCode>27518</postalCode></addr>
+      <telecom value="tel:+1-(877)599-5123" use="WP"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>Medfusion Electronic Health Data Channel v1.1</manufacturerModelName>
+        <softwareName>Medfusion Electronic Health Data Channel v1.1</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="1.3.6.1.4.1.12045"/>
+        <name>Medfusion, Inc.</name>
+        <telecom value="tel:+1-(877)599-5123" use="WP"/>
+        <addr><streetAddressLine>5501 Dillard Dr</streetAddressLine><city>Cary</city><state>NC</state><postalCode>27518</postalCode></addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <informant>
+    <assignedEntity>
+      <id root="1.3.6.1.4.1.12045.1.30.1" extension="97c2f15c-e46d-48f6-bff9-1da69df968d1"/>
+      <addr><streetAddressLine>Buck Jones Road</streetAddressLine><city>Raleigh</city><state>NC</state><postalCode>12345</postalCode></addr>
+      <telecom value="tel:+1(123)456-7980"/>
+      <assignedPerson>
+        <name><family>DE7933_1</family><given>DE7933_1</given></name>
+      </assignedPerson>
+    </assignedEntity>
+  </informant>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.3.6.1.4.1.12045"/>
+        <name>Medfusion</name>
+        <telecom value="tel:+1-(877)599-5123" use="WP"/>
+        <addr><streetAddressLine>5501 Dillard Dr</streetAddressLine><city>Cary</city><state>NC</state><postalCode>27518</postalCode></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="IND">
+    <associatedEntity  classCode="PRS">
+      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="789"/> <!-- This establihes the id by including the entity information -->
+      <code code="HUSB" displayName="Husband" codeSystem="2.16.840.1.113883.5.111" codeSystemName="Role Code"></code>
+      <addr><streetAddressLine>Buck Jones Road</streetAddressLine><city>Raleigh</city><state>NC</state><postalCode>12345</postalCode></addr>
+      <telecom value="tel:+1(123)456-7980"/>
+      <associatedPerson>
+        <name><family>Smith</family><given>Ralph</given></name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <participant typeCode="NOT">
+    <associatedEntity classCode="ECON">
+      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="789"/> <!-- This id points to the patient's husband -->
+      <!--<addr nullFlavor="NA"/>
+      <associatedPerson>
+        <name><given>emrgency</given></name>
+      </associatedPerson>-->
+    </associatedEntity>
+  </participant>
+  <participant typeCode="IND">
+    <associatedEntity classCode="EMP">
+      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="123"/> <!-- This id points to the patient role -->
+      <scopingOrganization>
+        <name>primary employer</name>
+      </scopingOrganization>
+    </associatedEntity>
+  </participant>
+  <participant typeCode="IND">
+    <associatedEntity classCode="EMP">
+      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="789"/> <!-- This id points to the patient's husband -->
+      <scopingOrganization>
+        <name>secondary employer</name>
+      </scopingOrganization>
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <id nullFlavor="NA"/>
+      <effectiveTime>
+        <low nullFlavor="UNK"/>
+        <high value="20140325162115.317-0400"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="RP" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role"/>
+        <time>
+          <low nullFlavor="UNK"/>
+          <high nullFlavor="UNK"/>
+        </time>
+        <assignedEntity>
+          <id root="ea24e737-f4a5-4f38-9efd-4b66abdc6986"/>
+          <code/>
+          <addr><state>AL</state></addr>
+          <telecom nullFlavor="NA"/>
+          <assignedPerson>
+            <name/>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <component> 
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
+          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/>
+          <title>payers</title>
+          <text><list><item>primary insurance name</item><item/><item/></list><list><item>secondary insurance name</item><item/><item/></list></text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.60"/> <!-- Coverage Activity -->
+              <id root="2.16.840.1.113883.3.184" extension="P123457"/> <!-- Don't put this id here. DSTU Comment #997 -->
+              <id root="45e897b6-cc90-4e15-bf23-e1f16cb2318a"/>
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
+              <statusCode code="completed"/> <!-- Should this statusCode be active? -->
+              <!-- ************** first policy - which really should be a "payment activity ****************** -->
+              <entryRelationship typeCode="COMP"> 
+                <sequenceNumber value="1"/>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.61"/><!-- Policy Activity -->
+                  <id root="899e030b-b866-4b95-9a08-81265e4a5bce"/>
+                  <code nullFlavor="UNK"/>
+                  <statusCode code="completed"/>
+                  <performer typeCode="PRF"> <!-- This is the payer --> <!-- How do we show self pay? In some cases, is the guarantor the payer too? -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.88"/>
+                    <assignedEntity> <!-- Who is really the right entity here? -->
+                      <id root="2.16.840.1.113883.3.184" extension="P123456"/> <!-- Should be the policy id -->
+                      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship"/>
+                      <addr><streetAddressLine>primary claims address</streetAddressLine><city>primary claims city</city><state>AL</state><postalCode>11111</postalCode></addr>
+                      <telecom value="tel:+1(111)111-1111"/>
+                      <representedOrganization>
+                        <name>primary insurance name</name>
+                        <telecom value="tel:+1(111)111-1111"/>
+                        <addr><streetAddressLine>primary claims address</streetAddressLine><city>primary claims city</city><state>AL</state><postalCode>11111</postalCode></addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <performer typeCode="PRF"> <!-- This is the Insurance Company, ie Guarantor -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
+                    <assignedEntity>
+                      <id root="b8cd56b1-d151-4466-a913-26c166d72b4a"/>
+                      <code code="GUAR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode"/>
+                      <addr><streetAddressLine>primary claims address</streetAddressLine><city>primary claims city</city><state>AL</state><postalCode>11111</postalCode></addr>
+                      <telecom value="tel:+1(111)111-1111"/>
+                      <representedOrganization>
+                        <name>primary insurance name</name>
+                        <telecom value="tel:+1(111)111-1111"/>
+                        <addr><streetAddressLine>primary claims address</streetAddressLine><city>primary claims city</city><state>AL</state><postalCode>11111</postalCode></addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="HLD"> <!--  This is the policy holder -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.90"/>
+                    <participantRole classCode="HLD">
+                      <id root="2.16.840.1.113883.3.184" extension="123"/> <!-- This is the id of the holder of the first policy --> <!-- This is the person who needs to be recorded in the header with their role as employee. -->
+                      <code code="POLHOLD" displayName="Policy Holder" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" ></code>
+                      <addr><streetAddressLine>primary policy street</streetAddressLine><city>primary policy city</city><state>AL</state><postalCode>12345</postalCode></addr>
+                      <telecom value="tel:+1(111)111-1111"/>
+                      <playingEntity>
+                        <name><given>primary policy first name</given><family>primary policy last name</family></name>
+                        <sdtc:birthTime value="20131231190000.000-0500"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <participant typeCode="COV"> <!-- This is the covered person -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
+                    <participantRole classCode="PAT">
+                      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="123"/> <!-- This id should be meaningful to the authoring system as the patient's id. -->
+                      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Self"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                    </participantRole>
+                  </participant>
+                </act>
+              </entryRelationship>
+              <!-- ************** second policy ****************** -->
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="2"/>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.61"/><!-- Policy Activity -->
+                  <id root="45e897b6-cc90-4e15-bf23-e1f16cb2318a"/>
+                  <id root="899e030b-b866-4b95-9a08-81265e4a5bce" extension="7890"/>
+                  <code nullFlavor="UNK"/>
+                  <statusCode code="completed"/>
+                  <performer typeCode="PRF"> <!-- This is the payer --> <!-- How do we show self pay? In some cases, is the guarantor the payer too? -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.88"/>
+                    <assignedEntity> <!-- Who is really the right entity here? -->
+                      <id root="2.16.840.1.113883.3.184" extension="P789123"/><!-- This is the id of the holder of the second policy --> 
+                      <id root="45e897b6-cc90-4e15-bf23-e1f16cb2318a"/>
+                      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship"/>
+                      <addr><streetAddressLine>secondary claims address</streetAddressLine><city>secondary city</city><state>AK</state><postalCode>22222</postalCode></addr>
+                      <telecom value="tel:+1(222)222-2222"/>
+                      <representedOrganization>
+                        <name>secondary insurance name</name>
+                        <telecom value="tel:+1(222)222-2222"/>
+                        <addr><streetAddressLine>secondary claims address</streetAddressLine><city>secondary city</city><state>AK</state><postalCode>22222</postalCode></addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <performer typeCode="PRF"> <!-- This is the second Insurance Company, ie Guarantor -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
+                    <assignedEntity>
+                      <id root="45e897b6-cc90-4e15-bf23-e1f16cb2318a"/>
+                      <code code="GUAR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship"/>
+                      <addr><streetAddressLine>secondary claims address</streetAddressLine><city>secondary city</city><state>AK</state><postalCode>22222</postalCode></addr>
+                      <telecom value="tel:+1(222)222-2222"/>
+                      <representedOrganization>
+                        <name>secondary insurance name</name>
+                        <telecom value="tel:+1(222)222-2222"/>
+                        <addr><streetAddressLine>secondary claims address</streetAddressLine><city>secondary city</city><state>AK</state><postalCode>22222</postalCode></addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="HLD">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.90"/>
+                    <participantRole classCode="HLD">
+                      <id root="2.16.840.1.113883.3.184" extension="789"/><!-- This is the id of the holder of the second policy --> 
+                      <code code="POLHOLD" displayName="Policy Holder" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" ></code>
+                      <addr><streetAddressLine>secondary policy street</streetAddressLine><city>secondary policy city</city><state>AK</state><postalCode>22222</postalCode></addr>
+                      <telecom value="tel:+1(222)222-2222"/>
+                      <playingEntity>
+                        <name><given>secondary policy first name</given><family>secondary policy last name</family></name>
+                        <sdtc:birthTime value="20131231190000.000-0500"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <participant typeCode="COV"> <!-- This is the covered person -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
+                    <participantRole classCode="PAT">
+                      <id root="899b721a-d202-4131-99cc-4f9b4c24e47b" extension="123"/> <!-- This id should be meaningful to the authoring system as the patient's id. -->
+                      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Self"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                    </participantRole>
+                  </participant>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      
+      
+      
+      
+    </structuredBody>
+  </component>
+</ClinicalDocument>
