@@ -244,8 +244,8 @@
 									<!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
 									<!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
 									<!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
-									<value xsi:type="CD" code="416098002"
-										displayName="Drug allergy (disorder)"
+									<value xsi:type="CD" code="59037007"
+										displayName="Drug intolerance (disorder)"
 										codeSystem="2.16.840.1.113883.6.96"
 										codeSystemName="SNOMED CT">
 										<originalText>
@@ -255,7 +255,7 @@
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
-												<code code="1012160" displayName="Codeine"
+												<code code="2670" displayName="Codeine"
 												codeSystem="2.16.840.1.113883.6.88"
 												codeSystemName="RxNorm">
 												<originalText>
