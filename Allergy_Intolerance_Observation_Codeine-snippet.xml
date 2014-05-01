@@ -25,12 +25,12 @@
 							<td ID="AllergyAgent_1.1D">Codeine</td>
 						</tr>
 						<tr>
-							<th ID="AllergyETL_1.1L">Allergy Start Date:</th>
-							<td ID="AllergyETL_1.1D">03/15/2010</td>
+							<th>Allergy Start Date:</th>
+							<td>03/15/2010</td>
 						</tr>
 						<tr>
-							<th ID="AllergyETH_1.1L">Allergy End Date:</th>
-							<td ID="AllergyETH_1.1D"/>
+							<th>Allergy End Date:</th>
+							<td/>
 						</tr>
 						<tr>
 							<th ID="Reactions_1.1Label">Reactions:</th>
@@ -38,22 +38,22 @@
 								<list><item><table>
 								<thead>
 									<tr>
-										<th ID="REACTstart_1.1.0L">Start Date</th>
-										<th ID="REACTend_1.1.0L">End Date</th>
+										<th>Start Date</th>
+										<th>End Date</th>
 										<th ID="REACT_1.1.0L">Reaction</th>
 										<th ID="SEV_1.1.0L">Severity</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td ID="REACTstart_1.1.1D">01/29/2012</td>
-										<td ID="REACTend_1.1.1D">01/29/2012</td>
+										<td>01/29/2012</td>
+										<td>01/29/2012</td>
 										<td ID="REACT_1.1.1D">Nausea</td>
 										<td ID="SEV_1.1.1D">Severe</td>
 									</tr>
 									<tr>
-										<td ID="REACTstart_1.1.2D">03/15/2010</td>
-										<td ID="REACTend_1.1.2D">03/15/2010</td>
+										<td>03/15/2010</td>
+										<td>03/15/2010</td>
 										<td ID="REACT_1.1.2D">Nausea</td>
 										<td ID="SEV_1.1.2D">Mild</td>
 									</tr>
@@ -142,9 +142,7 @@
 							<!-- ** Reaction observation ** -->
 							<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
 							<id root="4adc1020-7b14-11db-9fe1-0800200c9a64"/>
-							<code nullFlavor="NA">
-								<originalText><reference value="#REACT_1.1.1L"/></originalText>
-							</code>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
 							<!-- Issue - that no value set has been established for this code. -->
 							<statusCode code="completed"/>
 							<effectiveTime>
@@ -163,9 +161,7 @@
 								<!-- ** Severity observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
 									<code code="SEV" displayName="Severity Observation"
-									codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode">
-										<originalText><reference value="#SEV_1.1.1L"/></originalText>
-									</code>
+									codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 									<statusCode code="completed"/>
 									<value xsi:type="CD" code="24484000" displayName="Severe"
 									codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
@@ -180,9 +176,7 @@
 							<!-- ** Reaction observation ** -->
 							<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
 							<id root="4adc1020-7b14-11db-9fe1-0800200c9a64"/>
-							<code nullFlavor="NA">
-								<originalText><reference value="#REACT_1.1.2D"/></originalText>
-							</code>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
 							<!-- Issue - that no value set has been established for this code. -->
 							<statusCode code="completed"/>
 							<effectiveTime>
@@ -199,9 +193,7 @@
 									<!-- ** Severity observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
 									<code code="SEV" displayName="Severity Observation"
-									codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode">
-										<originalText><reference value="#SEV_1.1.2D"/></originalText>
-									</code>
+									codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 									<statusCode code="completed"/>
 									<value xsi:type="CD" code="255604002" displayName="Mild"
 									codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
