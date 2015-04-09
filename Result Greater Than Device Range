@@ -208,7 +208,7 @@
                 <text>
                     <table border="1">
                         <thead>
-                            <tr ID="Result1">
+                            <tr>
                                 <th>Description</th>
                                 <th>Value / Unit</th>
                                 <th>Interpretation</th>
@@ -219,7 +219,7 @@
                             <tr>
                                 <th colspan="4">Glucose [Mass/Volume] In Capillary Blood at 03-02-2014 9:08a </th>
                             </tr>
-                            <tr>
+                            <tr ID="Result1">
                                 <td ID="Description1">Glucose [Mass/Volume] In Capillary Blood</td>
                                 <td ID="Value1">high off scale(&gt;)</td>
                                 <td ID="Interpretation1">high off scale(&gt;)</td>
