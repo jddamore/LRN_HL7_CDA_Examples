@@ -164,25 +164,25 @@
                                     <th>Encounter</th>
                                     <th>Performer</th>
                                     <th>Location</th>
-                                    <th>Date</th>
+                                    <th>Encounter date</th>
                                     <th>Diagnosis</th>
-                                    <th>Onset date</th>
+                                    <th>Problem Onset date</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr ID="Encounter1">
                                     <td>
-                                        <content ID="Encounter1"/>Checkup Examination (AMB) (99213)</td>
+                                        <content ID="Encounter1_type"/>Checkup Examination (AMB) (99213)</td>
                                     <td>General Physician</td>
                                     <td>Community Urgent Care (Urgent Care Center)
                                         <paragraph>17 Daws Road</paragraph>
                                         <paragraph>Blue Bell, MA  02368</paragraph>
                                     </td>
                                     <td>June 7, 2013 1:00pm</td>
-                                    <td>Costal Chondritis</td>
+                                    <td ID="Encounter1_diagnosis">Costal Chondritis</td>
                                     <td>August 15, 2012</td>
-                                    <td>Active</td>
+                                    <td ID="Encounter1_diagnosis_status">Active</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -195,11 +195,12 @@
                             <code code="99213" displayName="Office outpatient visit 15 minutes"
                                 codeSystemName="CPT" codeSystem="2.16.840.1.113883.6.12"
                                 codeSystemVersion="4">
-                                <originalText> Checkup Examination <reference value="#Encounter1"/>
+                                <originalText> Checkup Examination <reference value="#Encounter1_type"/>
                                 </originalText>
                                 <translation code="AMB" codeSystem="2.16.840.1.113883.5.4"
                                     displayName="Ambulatory" codeSystemName="HL7 ActEncounterCode"/>
                             </code>
+                            <text><reference value="#Encounter1"></reference></text>
                             <!-- June 7, 2013 at 1:00PM EST -->
                             <effectiveTime value="20130607130000-0500"/>
                             <performer>
@@ -265,7 +266,9 @@
                                                 <low value="20120815"/>
                                             </effectiveTime>
                                             <value xsi:type="CD" code="64109004" displayName="Costal Chondritis"
-                                                codeSystem="2.16.840.1.113883.6.96"/>
+                                                codeSystem="2.16.840.1.113883.6.96">
+                                                <originalText><reference value="#Encounter1_diagnosis"></reference></originalText>
+                                            </value>
                                             <entryRelationship typeCode="REFR">
                                                 <observation classCode="OBS" moodCode="EVN"> 
                                                     <!-- Problem Status -->
@@ -275,15 +278,15 @@
                                                         codeSystemName="LOINC"/>
                                                     <statusCode code="completed"/>
                                                     <value xsi:type="CD" code="55561003" displayName="Active"
-                                                        codeSystem="2.16.840.1.113883.6.96"/>
+                                                        codeSystem="2.16.840.1.113883.6.96">
+                                                        <originalText><reference value="#Encounter1_diagnosis_status"></reference></originalText>
+                                                    </value>
                                                 </observation>                                             
                                             </entryRelationship>
                                         </observation>
                                     </entryRelationship>
                                 </act>
-                                <!-- ** Encounter Diagnosis ** -->
-                                
-                                
+                                <!-- ** Encounter Diagnosis ** -->   
                             </entryRelationship>
                         </encounter>
                     </entry>

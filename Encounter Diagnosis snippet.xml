@@ -1,0 +1,145 @@
+
+            <!-- Encounter Section-->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+                    <!-- Encounters Section -->
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters"/>
+                    <title>ENCOUNTERS</title>
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Encounter</th>
+                                    <th>Performer</th>
+                                    <th>Location</th>
+                                    <th>Encounter date</th>
+                                    <th>Diagnosis</th>
+                                    <th>Problem Onset date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="Encounter1">
+                                    <td>
+                                        <content ID="Encounter1_type"/>Checkup Examination (AMB) (99213)</td>
+                                    <td>General Physician</td>
+                                    <td>Community Urgent Care (Urgent Care Center)
+                                        <paragraph>17 Daws Road</paragraph>
+                                        <paragraph>Blue Bell, MA  02368</paragraph>
+                                    </td>
+                                    <td>June 7, 2013 1:00pm</td>
+                                    <td ID="Encounter1_diagnosis">Costal Chondritis</td>
+                                    <td>August 15, 2012</td>
+                                    <td ID="Encounter1_diagnosis_status">Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <!-- ** Encounter activities ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+                            <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+                            <code code="99213" displayName="Office outpatient visit 15 minutes"
+                                codeSystemName="CPT" codeSystem="2.16.840.1.113883.6.12"
+                                codeSystemVersion="4">
+                                <originalText> Checkup Examination <reference value="#Encounter1_type"/>
+                                </originalText>
+                                <translation code="AMB" codeSystem="2.16.840.1.113883.5.4"
+                                    displayName="Ambulatory" codeSystemName="HL7 ActEncounterCode"/>
+                            </code>
+                            <text><reference value="#Encounter1"></reference></text>
+                            <!-- June 7, 2013 at 1:00PM EST -->
+                            <effectiveTime value="20130607130000-0500"/>
+                            <performer>
+                                <assignedEntity>
+                                    <!-- Provider NPI "PseduoMD-3" -->
+                                    <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+                                    <code code="59058001" codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED CT" displayName="General Physician"/>
+                                </assignedEntity>
+                            </performer>
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                                    <!-- Service Delivery Location template -->
+                                    <code code="1160-1" codeSystem="2.16.840.1.113883.6.259"
+                                        codeSystemName="HealthcareServiceLocation"
+                                        displayName="Urgent Care Center"/>
+                                    <addr>
+                                        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                                        <city>Blue Bell</city>
+                                        <state>MA</state>
+                                        <postalCode>02368</postalCode>
+                                    </addr>
+                                    <telecom nullFlavor="UNK"/>
+                                    <playingEntity classCode="PLC">
+                                        <name>Community Urgent Care</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                            <!--<entryRelationship typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                                    <id root="db734647-fc99-424c-a864-7e3cda82e703"
+                                        extension="45665"/>
+                                    <code code="404684003" displayName="Finding"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED CT"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20070103"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="233604007" displayName="Pneumonia"
+                                        codeSystem="2.16.840.1.113883.6.96"/>
+                                </observation>
+                            </entryRelationship>-->
+                            <!-- Note: Encounter Activities Template is missing the conformance for the typeCode on the entryRelationship -->
+                            <entryRelationship typeCode="REFR">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <!-- Encounter Diagnosis -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+                                    <code code="29308-4" displayName="Diagnosis"
+                                        codeSystem="2.16.840.1.113883.6.1"
+                                        codeSystemName="LOINC"/>
+                                    <entryRelationship typeCode="SUBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <!-- Problem Observation -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                            <id root="db734647-fc99-424c-a864-7e3cda82e704"/>
+                                            <code code="282291009" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.96"
+                                                codeSystemName="SNOMED CT"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime>
+                                                <low value="20120815"/>
+                                            </effectiveTime>
+                                            <value xsi:type="CD" code="64109004" displayName="Costal Chondritis"
+                                                codeSystem="2.16.840.1.113883.6.96">
+                                                <originalText><reference value="#Encounter1_diagnosis"></reference></originalText>
+                                            </value>
+                                            <entryRelationship typeCode="REFR">
+                                                <observation classCode="OBS" moodCode="EVN"> 
+                                                    <!-- Problem Status -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                                                    <code code="33999-4" displayName="Status"
+                                                        codeSystem="2.16.840.1.113883.6.1"
+                                                        codeSystemName="LOINC"/>
+                                                    <statusCode code="completed"/>
+                                                    <value xsi:type="CD" code="55561003" displayName="Active"
+                                                        codeSystem="2.16.840.1.113883.6.96">
+                                                        <originalText><reference value="#Encounter1_diagnosis_status"></reference></originalText>
+                                                    </value>
+                                                </observation>                                             
+                                            </entryRelationship>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                                <!-- ** Encounter Diagnosis ** -->   
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            
