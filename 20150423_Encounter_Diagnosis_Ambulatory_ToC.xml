@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!-- This is an empty C-CDA skeleton which will be used by HL7 CDA Example Task Force -->
+<!-- This document was based on prior work by Lisa Nelson and Brian Weiss. contact John D'Amore with questions -->
+<!-- See http://wiki.hl7.org/index.php?title=CDA_Example_Task_Force -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../../05%20Professional/01%20HL7/00%20Standard%20-%20C-CDA%20R2.0/20141112%20C-CDA%20R2.0%20FINAL%20Published/C-CDA-R2-publication-package-20141112/schema/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+    <realmCode code="US"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <templateId root="2.16.840.1.113883.10.20.22.1.1"/> <!-- C-CDA -->
+    <templateId root="2.16.840.1.113883.10.20.22.1.2"/> <!-- CCD -->
+    <id root="2.16.840.1.113883.3.3208.101.1" extension="20130607100315-CCDA-CCD"/>
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summarization of Episode Note"/>
+    <title>Visit Sumary</title>
+    <!-- This example is in Oregon, so the offset to UTC time is -0800 -->
+    <effectiveTime value="20120815103000-0800"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="en-US"/>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.3.3208.101.2" extension="20130607100800-Patient1"/>
+            <addr use="HP">
+                <streetAddressLine>1111 StreetName St.</streetAddressLine>
+                <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                <country>US</country>
+            </addr>
+            <telecom value="tel:+1(555)111-1111" use="HP"/>
+            <telecom value="mailto:Adam.Everyman@gmail.com"/>
+            <patient>
+                <name use="L"><given>Adam</given><family>Everyman</family></name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
+                <birthTime value="19621022"/>
+                <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+                <raceCode code="2106-3" displayName="White"
+                    codeSystem="2.16.840.1.113883.6.238"
+                    codeSystemName="OMB Standards for Race and Ethnicity"/>
+                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
+                    codeSystem="2.16.840.1.113883.6.238"
+                    codeSystemName="OMB Standards for Race and Ethnicity"/>
+                <languageCommunication>
+                    <!-- Can we add the codeSystem for the langageCode? -->
+                    <languageCode code="en"/>
+                    <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                    <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value="20130607000000"/>
+        <assignedAuthor>
+            <!-- Provider NPI "PseduoMD-3" -->
+            <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+            <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
+                codeSystemName="Health Care Provider Taxonomy" 
+                displayName="Internal Medicine"/>
+            <addr use="WP">
+                <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
+                <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                <country>US</country>
+            </addr>
+            <telecom value="tel:+1(555)555-5555" use="WP"/>
+            <assignedPerson>
+                <name>
+                    <given>Samir</given>
+                    <family>Kahn</family>
+                    <suffix>MD</suffix>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <dataEnterer>
+        <assignedEntity>
+            <id extension="33333" root="2.16.840.1.113883.4.6"/>
+            <code code="364SA2200X" displayName="Adult Health" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"/>
+            <addr use="WP">
+                <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
+                <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                <country>US</country>
+            </addr>
+            <telecom value="tel:+1(555)555-5555" use="WP"/>
+            <assignedPerson>
+                <name>
+                    <given>Nancy</given>
+                    <family>Nightingale</family>
+                    <suffix>RN</suffix>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </dataEnterer>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id extension="44444" root="2.16.840.1.113883.4.6"/>
+                <name>Get Well Clinic</name>
+                <telecom value="tel:+1(555)555-5555" use="WP"/>
+                <addr use="WP">
+                    <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
+                    <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                    <country>US</country>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <legalAuthenticator>
+        <time value="20130607000000"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <!-- Provider NPI "PseduoMD-3" -->
+            <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+            <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
+                codeSystemName="Health Care Provider Taxonomy" 
+                displayName="Internal Medicine"/>
+            <addr use="WP">
+                <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
+                <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                <country>US</country>
+            </addr>
+            <telecom value="tel:+1(555)555-5555" use="WP"/>
+            <assignedPerson>
+                <name>
+                    <given>Samir</given>
+                    <family>Kahn</family>
+                    <suffix>MD</suffix>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    <documentationOf>
+        <serviceEvent classCode="PCPR">
+            <effectiveTime>
+                <low value="19330316"/>
+                <high value="20130607"/>
+            </effectiveTime>
+            <performer typeCode="PRF">
+                <assignedEntity>
+                    <!-- Provider NPI "PseduoMD-3" -->
+                    <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+                    <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="Health Care Provider Taxonomy" 
+                        displayName="Internal Medicine"/>
+                    <addr use="WP">
+                        <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
+                        <city>Portland</city><state>OR</state><postalCode>97005</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(555)555-5555" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <family>Khan</family>
+                            <given>Samir</given>
+                            <suffix>MD</suffix>
+                        </name>                                        
+                    </assignedPerson>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <!-- CDA Body -->
+    <component>
+        <structuredBody>
+            <!-- Encounter Section-->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+                    <!-- Encounters Section -->
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters"/>
+                    <title>ENCOUNTERS</title>
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Encounter</th>
+                                    <th>Performer</th>
+                                    <th>Location</th>
+                                    <th>Encounter date</th>
+                                    <th>Diagnosis</th>
+                                    <th>Diagnosis Status</th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="Encounter1">
+                                    <td>
+                                        <content ID="Encounter1_type"/>Office outpatient visit</td>
+                                    <td ID="Encounter1_performer_type">Internal Medicine (Samir Kahn,MD)</td>
+                                    <td>Community Urgent Care (Urgent Care Center)
+                                        <paragraph>1004 Healthcare Dr.</paragraph>
+                                        <paragraph>Portland, OR  97005</paragraph>
+                                    </td>
+                                    <td>August 15, 2012</td>
+                                    <td ID="Encounter1_diagnosis">Costal Chondritis</td>
+                                    <td ID="Encounter1_diagnosis_status">Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <!-- ** Encounter activities ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+                            <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+                            <!-- Selected reasonable encounter/code. Not in test data -->
+                            <code code="99213" displayName="Office outpatient visit 15 minutes"
+                                codeSystemName="CPT" codeSystem="2.16.840.1.113883.6.12"
+                                codeSystemVersion="4">
+                                <originalText><reference value="#Encounter1_type"/>
+                                </originalText>
+                            </code>
+                            <text><reference value="#Encounter1"></reference></text>
+                            <!-- August 15, 2012 - no time since not provided in test data -->
+                            <effectiveTime value="20120815"/>
+                            <!-- Not specified in test data, but could infer Dr. Khan -->
+                            <performer>
+                                <assignedEntity>
+                                    <!-- Provider NPI "PseduoMD-3" -->
+                                    <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+                                    <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
+                                        codeSystemName="Health Care Provider Taxonomy" 
+                                        displayName="Internal Medicine">
+                                        <originalText><reference value=""></reference></originalText>
+                                    </code>
+                                    <assignedPerson>
+                                        <name>
+                                            <family>Khan</family>
+                                            <given>Samir</given>
+                                            <suffix>MD</suffix>
+                                        </name>                                        
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </performer>
+                            <participant typeCode="LOC">
+                                <!-- Location is inferred from the care team address-->
+                                <participantRole classCode="SDLOC">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                                    <!-- Service Delivery Location template -->
+                                    <code code="1160-1" codeSystem="2.16.840.1.113883.6.259"
+                                        codeSystemName="HealthcareServiceLocation"
+                                        displayName="Urgent Care Center"/>
+                                    <addr>
+                                        <streetAddressLine>1004 Healthcare Dr.</streetAddressLine>
+                                        <city>Portland</city>
+                                        <state>OR</state>
+                                        <postalCode>97005</postalCode>
+                                    </addr>
+                                    <telecom value="tel:+1(555)555-1004"/>
+                                    <playingEntity classCode="PLC">
+                                        <name>Get Well Clinic</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                            <entryRelationship typeCode="REFR">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <!-- Encounter Diagnosis -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+                                    <code code="29308-4" displayName="Diagnosis"
+                                        codeSystem="2.16.840.1.113883.6.1"
+                                        codeSystemName="LOINC"/>
+                                    <entryRelationship typeCode="SUBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <!-- Problem Observation -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                            <id root="db734647-fc99-424c-a864-7e3cda82e704"/>
+                                            <code code="282291009" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.96"
+                                                codeSystemName="SNOMED CT"/>
+                                            <statusCode code="completed"/>
+                                            <!-- This same data may be represented in the Problem List -->
+                                            <effectiveTime>
+                                                <low value="20120815"/>
+                                            </effectiveTime>
+                                            <!-- Test data is SNOMED but in practice this is probably an ICD9/10 code -->
+                                            <value xsi:type="CD" code="64109004" displayName="Costal Chondritis"
+                                                codeSystem="2.16.840.1.113883.6.96">
+                                                <originalText><reference value="#Encounter1_diagnosis"></reference></originalText>
+                                            </value>
+                                            <entryRelationship typeCode="REFR">
+                                                <observation classCode="OBS" moodCode="EVN"> 
+                                                    <!-- Problem Status which is strange on an encounter diagnosis but 
+                                                         included due to the test data -->
+                                                    <!-- C-CDA R2.0 deprecated this template -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                                                    <code code="33999-4" displayName="Status"
+                                                        codeSystem="2.16.840.1.113883.6.1"
+                                                        codeSystemName="LOINC"/>
+                                                    <statusCode code="completed"/>
+                                                    <value xsi:type="CD" code="55561003" displayName="Active"
+                                                        codeSystem="2.16.840.1.113883.6.96">
+                                                        <originalText><reference value="#Encounter1_diagnosis_status"></reference></originalText>
+                                                    </value>
+                                                </observation>                                             
+                                            </entryRelationship>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                                <!-- ** Encounter Diagnosis ** -->   
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- Allergies Section -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+                    <!-- Allergies (entries required) section -->
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC"/>
+                    <title>ALLERGIES</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Medication Section -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+                    <!-- Medication Section (entries required) -->
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+                    <title>MEDICATIONS</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Problem Section -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <!-- conforms to Problems section with entries required -->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+                    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="PROBLEM LIST"/>
+                    <title>PROBLEMS</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Procedures Section -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+                    <!-- Procedures Section with Coded Entries Required-->
+                    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+                    <title>PROCEDURES</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Results Section -->
+            <component>
+            <section nullFlavor="NI">
+                <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+                <!-- Results Section with Coded Entries Required-->
+                <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+                <title>RESULTS</title>
+                <text>
+                    No Information
+                </text>
+            </section>
+            </component>
+            <!-- Plan of Care Section -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+                    <!-- Plan of Care Section-->
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
+                    <title>PLAN OF CARE</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Social History (with Smoking Status Observation) -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+                    <!-- Social History Section -->
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History"/>
+                    <title>SOCIAL HISTORY</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- Vital Signs Section (entries required) -->
+            <component>
+                <!-- nullFlavor of NI indicates No Information.-->
+                <!-- Validator currently checks for entries even in case of nullFlavor - this will need to be updated if approved.-->
+                <section nullFlavor="NI">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+                    <!-- Vital Signs (entries required) -->
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+                    <title>VITAL SIGNS</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
