@@ -50,8 +50,8 @@
     <author>
         <time value="20130607000000"/>
         <assignedAuthor>
-            <!-- Provider NPI "PseduoMD-3" -->
-            <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+            <!-- Fake Provider NPI "12345678910" -->
+            <id root="2.16.840.1.113883.4.6" extension="12345678910"/>
             <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                 codeSystemName="Health Care Provider Taxonomy" 
                 displayName="Internal Medicine"/>
@@ -63,10 +63,11 @@
             <telecom value="tel:+1(555)555-5555" use="WP"/>
             <assignedPerson>
                 <name>
+                    <prefix>Dr.</prefix>
+                    <family>Khan</family>
                     <given>Samir</given>
-                    <family>Kahn</family>
-                    <suffix>MD</suffix>
-                </name>
+                    <!--  Could alternately use <suffix>MD</suffix> -->
+                </name>  
             </assignedPerson>
         </assignedAuthor>
     </author>
@@ -107,8 +108,8 @@
         <time value="20130607000000"/>
         <signatureCode code="S"/>
         <assignedEntity>
-            <!-- Provider NPI "PseduoMD-3" -->
-            <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+            <!-- Fake Provider NPI "12345678910" -->
+            <id root="2.16.840.1.113883.4.6" extension="12345678910"/>
             <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                 codeSystemName="Health Care Provider Taxonomy" 
                 displayName="Internal Medicine"/>
@@ -120,23 +121,29 @@
             <telecom value="tel:+1(555)555-5555" use="WP"/>
             <assignedPerson>
                 <name>
+                    <prefix>Dr.</prefix>
+                    <family>Khan</family>
                     <given>Samir</given>
-                    <family>Kahn</family>
-                    <suffix>MD</suffix>
-                </name>
+                    <!--  Could alternately use <suffix>MD</suffix> -->
+                </name>  
             </assignedPerson>
         </assignedEntity>
     </legalAuthenticator>
     <documentationOf>
         <serviceEvent classCode="PCPR">
+            <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+            <code code="99213" displayName="Office outpatient visit 15 minutes"
+                codeSystemName="CPT" codeSystem="2.16.840.1.113883.6.12"
+                codeSystemVersion="4">
+            </code>
             <effectiveTime>
-                <low value="19330316"/>
-                <high value="20130607"/>
+                <low value="201208151000-0800"/>
+                <high value="20120815103000-0800"/>
             </effectiveTime>
             <performer typeCode="PRF">
                 <assignedEntity>
-                    <!-- Provider NPI "PseduoMD-3" -->
-                    <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+                    <!-- Fake Provider NPI "12345678910" -->
+                    <id root="2.16.840.1.113883.4.6" extension="12345678910"/>
                     <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Health Care Provider Taxonomy" 
                         displayName="Internal Medicine"/>
@@ -148,15 +155,25 @@
                     <telecom value="tel:+1(555)555-5555" use="WP"/>
                     <assignedPerson>
                         <name>
+                            <prefix>Dr.</prefix>
                             <family>Khan</family>
                             <given>Samir</given>
-                            <suffix>MD</suffix>
-                        </name>                                        
+                            <!--  Could alternately use <suffix>MD</suffix> -->
+                        </name>                       
                     </assignedPerson>
                 </assignedEntity>
             </performer>
         </serviceEvent>
     </documentationOf>
+   <componentOf>
+       <encompassingEncounter>
+           <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+           <effectiveTime>
+               <low value="20120815100000-0800"/>
+               <high value="20120815103000-0800"/>
+           </effectiveTime>
+       </encompassingEncounter>
+   </componentOf>
     <!-- CDA Body -->
     <component>
         <structuredBody>
@@ -174,21 +191,20 @@
                                     <th>Encounter</th>
                                     <th>Performer</th>
                                     <th>Location</th>
-                                    <th>Encounter date</th>
+                                    <th>Encounter date/time</th>
                                     <th>Diagnosis</th>
                                     <th>Diagnosis Status</th>
-                                 </tr>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr ID="Encounter1">
-                                    <td>
-                                        <content ID="Encounter1_type"/>Office outpatient visit</td>
-                                    <td ID="Encounter1_performer_type">Internal Medicine (Samir Kahn,MD)</td>
+                                    <td ID="Encounter1_type">Office outpatient visit</td>
+                                    <td>Dr. Samir Kahn <content ID="Encounter1_performer_type">Internal Medicine</content> </td>
                                     <td>Community Urgent Care (Urgent Care Center)
                                         <paragraph>1004 Healthcare Dr.</paragraph>
                                         <paragraph>Portland, OR  97005</paragraph>
                                     </td>
-                                    <td>August 15, 2012</td>
+                                    <td>August 15, 2012  10:00am</td>
                                     <td ID="Encounter1_diagnosis">Costal Chondritis</td>
                                     <td ID="Encounter1_diagnosis_status">Active</td>
                                 </tr>
@@ -208,29 +224,30 @@
                                 </originalText>
                             </code>
                             <text><reference value="#Encounter1"></reference></text>
-                            <!-- August 15, 2012 - no time since not provided in test data -->
-                            <effectiveTime value="20120815"/>
-                            <!-- Not specified in test data, but could infer Dr. Khan -->
+                            <!-- August 15, 2012 - added time (pacific time) since but not present in test data -->
+                            <effectiveTime value="201208151000-0800"/>
+                            <!-- Not specified in test data, but could infer Dr. Khan from the test scenario narrative-->
                             <performer>
                                 <assignedEntity>
-                                    <!-- Provider NPI "PseduoMD-3" -->
-                                    <id root="2.16.840.1.113883.4.6" extension="PseduoMD-3"/>
+                                    <!-- Fake Provider NPI "12345678910" -->
+                                    <id root="2.16.840.1.113883.4.6" extension="12345678910"/>
                                     <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                                         codeSystemName="Health Care Provider Taxonomy" 
                                         displayName="Internal Medicine">
-                                        <originalText><reference value=""></reference></originalText>
+                                        <originalText><reference value="Encounter1_performer_type"></reference></originalText>
                                     </code>
                                     <assignedPerson>
                                         <name>
+                                            <prefix>Dr.</prefix>
                                             <family>Khan</family>
                                             <given>Samir</given>
-                                            <suffix>MD</suffix>
+                                            <!--  Could alternately use <suffix>MD</suffix> -->
                                         </name>                                        
                                     </assignedPerson>
                                 </assignedEntity>
                             </performer>
                             <participant typeCode="LOC">
-                                <!-- Location is inferred from the care team address-->
+                                <!-- Location is inferred from the care team address in test data -->
                                 <participantRole classCode="SDLOC">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
                                     <!-- Service Delivery Location template -->
@@ -256,6 +273,8 @@
                                     <code code="29308-4" displayName="Diagnosis"
                                         codeSystem="2.16.840.1.113883.6.1"
                                         codeSystemName="LOINC"/>
+                                    <!-- This example uses the Problem Status Observation to represent status of the diagnosis.
+                                     The statusCode of the encounter diagnosis is an alternative approach.-->
                                     <entryRelationship typeCode="SUBJ">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <!-- Problem Observation -->
