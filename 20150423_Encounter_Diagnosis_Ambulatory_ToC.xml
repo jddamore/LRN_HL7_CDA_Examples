@@ -26,7 +26,7 @@
                 <country>US</country>
             </addr>
             <telecom value="tel:+1(555)111-1111" use="HP"/>
-            <telecom value="mailto:Adam.Everyman@gmail.com"/>
+            <telecom value="mailto:Adam.Everyman@gmail.com" use="HP"/>
             <patient>
                 <name use="L"><given>Adam</given><family>Everyman</family></name>
                 <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
