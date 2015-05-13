@@ -40,7 +40,7 @@
                     codeSystemName="OMB Standards for Race and Ethnicity"/>
                 <languageCommunication>
                     <!-- Can we add the codeSystem for the langageCode? -->
-                    <languageCode code="en"/>
+                    <languageCode code="eng"/>
                     <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
                     <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
                 </languageCommunication>
