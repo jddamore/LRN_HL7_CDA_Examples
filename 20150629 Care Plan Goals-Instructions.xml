@@ -187,34 +187,65 @@
                         <table border="1" width="100%">
                             <thead>
                                 <tr>
-                                    <th>Goal</th>
                                     <th>Date/time</th>
+									<th>Goal</th>
+									<th>Instructions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ID="Goal1">
-                                    <td ID="Goal1_desc">Weight Loss</td>
                                     <td>August 15, 2012  10:00am</td>
+									<td ID="Goal1_desc">Weight Loss</td>
+									<td ID="Instruction1"><content ID="Instruction1_Type">Patient Education:</content><content ID="Instruction1_desc">Diet and exercise counseling provided during visit.</content></td>
+                                </tr>
+								<tr ID="Goal2">
+                                    <td>August 15, 2012  10:00am</td>
+									<td ID="Goal2_desc">Asthma management</td>
+									<td ID="Instruction2"><content ID="Instruction2_Type">Patient Education:</content><content ID="Instruction2_desc">Resources and instructions provided during visit.</content></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <content ID="Instruction1"><content ID="Instruction1_type">Patient Education:</content> <content ID="Instruction1_desc">Diet and exercise counseling provided during visit.</content></content>
-                        <table border="1" width="100%">
-                            <thead>
-                                <tr>
-                                    <th>Goal</th>
-                                    <th>Date/time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ID="Goal2">
-                                    <td ID="Goal2_desc">Asthma management</td>
-                                    <td>August 15, 2012  10:00am</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <content ID="Instruction2"><content ID="Instruction2_type">Patient Education:</content> <content ID="Instruction2_desc">Resources and instructions provided during visit.</content></content>
                     </text>
+					<entry>
+                        <observation classCode="OBS" moodCode="INT">
+                            <!-- Plan of Care Activity Observation -->
+                            <!-- This template is most similar to the GOAL observation templating in C-CDA R2.0 -->
+                            <!-- The moodCode is established as GOL for Goals.-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+                            <id root="2a620155-9d11-439e-92b3-5d9815ff4dd4"/>
+                            <code code="289169006" displayName="weight loss"
+                                codeSystem="2.16.840.1.113883.6.96"
+                                codeSystemName="SNOMED CT">
+                                <originalText>
+									<reference value="#Goal1_desc"/>
+                                </originalText>
+                            </code>
+                            <text>
+								<reference value="#Goal1"></reference>
+							</text>
+                            <effectiveTime value="201208151000-0800"/>
+							<entryRelationship typeCode="RSON" inversionInd="true">
+								<act classCode="ACT" moodCode="EVN">
+								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+								<id root="2a620155-9d11-439e-92b3-5d9815ff4df2"/> 
+								<code code="311401005" displayName="patient education"
+									codeSystem="2.16.840.1.113883.6.96"
+									codeSystemName="SNOMED CT">
+									<originalText>
+										<reference value="#Instruction1_Type"/>
+									</originalText>
+								</code>
+								<statusCode code="completed" />
+								<!-- 
+								<text>
+									<reference value="#Instruction1"></reference>
+								</text>
+								-->
+								<effectiveTime value="201208151000-0800"/>
+								</act>
+							</entryRelationship> 
+                        </observation>
+                    </entry>
                     <entry>
                         <observation classCode="OBS" moodCode="INT">
                             <!-- Plan of Care Activity Observation -->
@@ -225,28 +256,34 @@
                             <code code="406162001" displayName="asthma management"
                                 codeSystem="2.16.840.1.113883.6.96"
                                 codeSystemName="SNOMED CT">
-                                <originalText><reference value="#Goal2_desc"/>
+                                <originalText>
+									<reference value="#Goal2_desc"/>
                                 </originalText>
                             </code>
-                            <text><reference value="#Goal2"></reference></text>
+                            <text>
+								<reference value="#Goal2"></reference>
+								</text>
                             <effectiveTime value="201208151000-0800"/>
+							<entryRelationship typeCode="RSON" inversionInd="true">
+								<act classCode="ACT" moodCode="EVN">
+								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+								<id root="2a620155-9d11-439e-92b3-5d9815ff4df6"/> 
+								<code code="311401005" displayName="patient education"
+									codeSystem="2.16.840.1.113883.6.96"
+									codeSystemName="SNOMED CT">
+									<originalText><reference value="#Instruction2_Type"/>
+									</originalText>
+								</code>
+								<statusCode code="completed" />
+								<!-- 
+								<text>
+									<reference value="#Instruction2"></reference>
+								</text>
+								-->
+								<effectiveTime value="201208151000-0800"/>
+								</act>
+							</entryRelationship> 
                         </observation>
-                    </entry>
-                    <entry>
-                        <act classCode="ACT" moodCode="INT">
-                            <!-- Instruction-->
-                            <!-- The statement in the example should really be an EVN  probably a procedure....-->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                            <id root="2a620155-9d11-439e-92b3-5d9815ff4df6"/> 
-                            <code code="311401005" displayName="patient education"
-                                codeSystem="2.16.840.1.113883.6.96"
-                                codeSystemName="SNOMED CT">
-                                <originalText><reference value="#Instruction2_Type"/>
-                                </originalText>
-                            </code>
-                            <text><reference value="#Instruction2"></reference></text>
-                            <effectiveTime value="201208151000-0800"/>
-                        </act>
                     </entry>
                 </section>
             </component>
