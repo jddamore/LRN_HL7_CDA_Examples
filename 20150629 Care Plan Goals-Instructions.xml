@@ -181,7 +181,7 @@
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
                     <!-- Plan of Care Section -->
-                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Plan ot Treatment"/>
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Plan of Treatment"/>
                     <title>PLAN OF CARE</title>
                     <text>
                         <table border="1" width="100%">
@@ -207,7 +207,7 @@
                         </table>
                     </text>
 					<entry>
-                        <observation classCode="OBS" moodCode="INT">
+                        <observation classCode="OBS" moodCode="GOL">
                             <!-- Plan of Care Activity Observation -->
                             <!-- This template is most similar to the GOAL observation templating in C-CDA R2.0 -->
                             <!-- The moodCode is established as GOL for Goals.-->
@@ -226,13 +226,16 @@
                             <effectiveTime value="201208151000-0800"/>
 							<entryRelationship typeCode="RSON" inversionInd="true">
 								<act classCode="ACT" moodCode="EVN">
+									<!-- Procedure Activity Act - selected over instructions template
+									since it requries moodCode=INT. This act records information provided
+									during the visit.-->
 								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
 								<id root="2a620155-9d11-439e-92b3-5d9815ff4df2"/> 
 								<code code="311401005" displayName="patient education"
 									codeSystem="2.16.840.1.113883.6.96"
 									codeSystemName="SNOMED CT">
 									<originalText>
-										<reference value="#Instruction1_Type"/>
+										<reference value="#ActionProvided_Type"/>
 									</originalText>
 								</code>
 								<statusCode code="completed" />
