@@ -65,7 +65,9 @@
 									<reference value="#Action1"></reference>
 								</text>
 								-->
-								<effectiveTime value="201208151000-0800"/>
+								<!-- In this example, the instruction was given at the same time that the goal was set.
+									effectiveTime can be used when action is taken at a distinct time.
+								<effectiveTime value="201208151000-0800"/> -->
 								</act>
 							</entryRelationship> 
                         </observation>
@@ -104,7 +106,9 @@
 									<reference value="#Action2"></reference>
 								</text>
 								-->
-								<effectiveTime value="201208151000-0800"/>
+							    <!-- In this example, the instruction was given at the same time that the goal was set.
+									effectiveTime can be used when action is taken at a distinct time.
+								<effectiveTime value="201208151000-0800"/> -->
 								</act>
 							</entryRelationship> 
                         </observation>
