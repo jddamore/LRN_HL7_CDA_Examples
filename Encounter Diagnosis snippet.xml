@@ -135,7 +135,6 @@
                                     </observation>
                                 </entryRelationship>
                             </act>
-                            <!-- ** Encounter Diagnosis ** -->   
                         </entryRelationship>
                     </encounter>
                 </entry>
