@@ -53,7 +53,7 @@
                         <reference value="#Encounter1_DischargeDispositionCode"></reference>
                     </originalText>
                     <!-- LRN: ISSUE - Hixny would need to get an OID to represent their local code system. I stuck the OID for SNOMED CT in the sample. It needs to be replaced. -->
-                    <translation code="DE" codeSystem="2.16.840.1.113883.6.96" codeSystemName="Hixny Local Discharge Code System" displayName="Disenrolled"/>
+                    <translation code="DE" codeSystem="need OID" codeSystemName="Hixny Local Discharge Code System" displayName="Disenrolled"/>
                 </sdtc:dischargeDispositionCode>
                 <performer>
                     <assignedEntity>
