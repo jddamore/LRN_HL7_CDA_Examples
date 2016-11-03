@@ -46,6 +46,9 @@
 								<translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7 ActEncounterCode"/>
 								-->
                 </code>
+		<text>
+		  <reference value="#Encounter1"/>
+		</text>
                 <effectiveTime value="201209271300+0500"/>
                 <!-- LRN: This shows use of the discharge disposition extension AND shows using both the suggested encoding from C-CDA R2.1 and some local Hixny codes. -->
                 <sdtc:dischargeDispositionCode code="04" codeSystem=" 2.16.840.1.113883.12.112"  codeSystemName="HL7 Discharge Disposition" displayName="Discharged/transferred to an intermediate-care facility (ICF)" >
