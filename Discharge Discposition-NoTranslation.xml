@@ -23,7 +23,7 @@
                     <tr ID="Encounter1">
                         <td ID="Encounter1_Type"> Checkup Examination </td>
                         <td>Performer Name</td>
-                        <td>Community Urgent Care Center</td>
+                        <td>Community Urgent Care 1007 Health Drive, Portland OR</td>
                         <td>September 27, 2012 at 1:00pm</td>
                         <td ID="Encounter1_DischargeDispositionCode">Disenrolled</td>
                         <td ID="Encounter1_DischargedToLoc">N/A</td>
