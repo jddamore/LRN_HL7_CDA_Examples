@@ -20,13 +20,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr id="Encounter1">
-                        <td id="Encounter1_Type"> Checkup Examination </td>
+                    <tr ID="Encounter1">
+                        <td ID="Encounter1_Type"> Checkup Examination </td>
                         <td>Performer Name</td>
-                        <td>Community Urgent Care Center</td>
+                        <td>Community Urgent Care Center 1007 Health Drive, Portland OR</td>
                         <td>September 27, 2012 at 1:00pm</td>
-                        <td id="Encounter1_DischargeDispositionCode">Discharged/transferred to an intermediate-care facility (ICF)</td>
-                        <td id="Encounter1_DischargedToLoc">Sunnyview Rehab Hospital</td>
+                        <td ID="Encounter1_DischargeDispositionCode">Discharged/transferred to an intermediate-care facility (ICF)</td>
+                        <td ID="Encounter1_DischargedToLoc">Sunnyview Rehab Hospital</td> <!-- Sender may include address if desired -->
                     </tr>
                 </tbody>
             </table>
