@@ -63,8 +63,8 @@
                                 <assignedPerson>
                                     <name>
                                         <prefix>Dr.</prefix>
-                                        <family>Khan</family>
                                         <given>Samir</given>
+                                        <family>Khan</family>
                                         <!--  Could alternately use <suffix>MD</suffix> -->
                                     </name>                                        
                                 </assignedPerson>
@@ -135,7 +135,6 @@
                                     </observation>
                                 </entryRelationship>
                             </act>
-                            <!-- ** Encounter Diagnosis ** -->   
                         </entryRelationship>
                     </encounter>
                 </entry>
