@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.29.1" extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.4.823.1.2.1" extension="2016-07-01" />
+  <templateId root="2.16.840.1.113883.4.823.1.1.1" extension="2016-07-01" />
+  <id root="2.16.840.1.113883.3.3208.101.1" extension="20130607100315-CCDA-CCD" />
+  <code code="81334-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Personal advance care plan" />
+  <title mediaType="text/plain" representation="TXT">Personal Advance Care Plan Document</title>
+  <effectiveTime value="20170222054951.947-0400" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.4.823.1.5270" extension="3" />
+  <versionNumber value="3" />
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.4.823.1" extension="20160601233903-5270" />
+      <addr use="HP">
+        <streetAddressLine partType="SAL">40 Happy Valley Road</streetAddressLine>
+        <city partType="CTY">Westerly</city>
+        <state partType="STA">RI</state>
+        <postalCode partType="ZIP">02891</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="mailto:Janie@JanieAppleseed.net" use="HP" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name use="L">
+          <given partType="GIV">Janie</given>
+          <family partType="FAM">Appleseed</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Female" />
+        <birthTime value="19620828" />
+        <maritalStatusCode nullFlavor="NI" />
+        <religiousAffiliationCode nullFlavor="NI" />
+        <raceCode nullFlavor="NI" />
+        <ethnicGroupCode nullFlavor="NI" />
+        <languageCommunication>
+          <languageCode code="eng" />
+          <modeCode nullFlavor="NI" />
+          <proficiencyLevelCode nullFlavor="NI" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20170222055130.740-0400" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="66666" />
+      <id root="2.16.840.1.113883.4.823.1" extension="20160601233903-5270" />
+      <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Self" />
+      <addr use="HP">
+        <streetAddressLine partType="SAL">40 Happy Valley Road</streetAddressLine>
+        <city partType="CTY">Westerly</city>
+        <state partType="STA">RI</state>
+        <postalCode partType="ZIP">02891</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name use="L">
+          <given partType="GIV">Janie</given>
+          <family partType="FAM">Appleseed</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <author>
+    <time value="20170222055130.740-0400" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="66660" />
+      <addr>
+        <streetAddressLine partType="SAL">P.O. Box 832624</streetAddressLine>
+        <city partType="CTY">Richardson</city>
+        <state partType="STA">TX</state>
+        <postalCode partType="ZIP">75083</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="tel:+1(202)776-7700" />
+      <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+        <manufacturerModelName mediaType="text/plain" representation="TXT" language="en-US">AD Vault MyDirectives.com</manufacturerModelName>
+        <softwareName mediaType="text/plain" representation="TXT" language="en-US">MyDirectives.com v2.0</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="1.3.6.1.4.1.42424242.4.99930.4" extension="4" />
+        <name use="L">ADVault, Inc.</name>
+        <telecom value="tel:+1(202)776-7700" use="WP" />
+        <addr use="WP">
+          <streetAddressLine partType="SAL">P.O. Box 832624</streetAddressLine>
+          <city partType="CTY">Richardson</city>
+          <state partType="STA">TX</state>
+          <postalCode partType="ZIP">75083</postalCode>
+          <country partType="CNT">US</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <dataEnterer>
+    <assignedEntity>
+      <id root="2.16.840.1.113883.4.6" extension="66666" />
+      <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Self" />
+      <addr use="HP">
+        <streetAddressLine partType="SAL">40 Happy Valley Road</streetAddressLine>
+        <city partType="CTY">Westerly</city>
+        <state partType="STA">RI</state>
+        <postalCode partType="ZIP">02891</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="mailto:Janie@JanieAppleseed.net" use="HP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name use="L">
+          <given partType="GIV">Janie</given>
+          <family partType="FAM">Appleseed</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.4.6" extension="44444" />
+        <name>MyDirectives.com</name>
+        <telecom value="tel:+1(202)776-7700" use="WP" />
+        <addr use="WP">
+          <streetAddressLine partType="SAL">P.O. Box 832624</streetAddressLine>
+          <city partType="CTY">Richardson</city>
+          <state partType="STA">TX</state>
+          <postalCode partType="ZIP">75083</postalCode>
+          <country partType="CNT">US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="CST">
+    <time value="20161215071945.060-0400" />
+    <associatedEntity classCode="AGNT">
+      <code code="HUSB" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="husband" />
+      <telecom value="mailto:MAppleseed@JanieAppleseed.org" use="HP" />
+      <associatedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given partType="GIV">Mark Appleseed</given>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <component>
+    <structuredBody>
+            <component>
+                <section>
+                    <code code="CARETEAM" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team" />
+                    <!-- Other possible types of Care Teams include:
+                    
+                    Note: FHIR permits multiple codes to be used to designate the type of care team.  CDA offers less precision, and so only the XXXX Dimension code is used.
+                    -->
+                    <title mediaType="text/plain" representation="TXT" language="en-US">Care Team Information</title>
+                    <text>
+                        <content ID="CARETEAM_1_LONGITUDINAL">Longitudinal Care Team<br/>
+                        From 1996 to present
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>PCP</td>
+                                    <td>Dr. John Bergeron (Add specialty here)<br>NPI: add NPI number here</br><br/>Wood River Health Services <br/>823 Main St., Hope Valley, RI 02832</td>
+                                    <td>(401)539-2461 <br/>Add e-mail here</td>
+                                    <td>From: Aug 1, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Eye Doctor</td>
+                                    <td>Dr. David Rivera <br/>Vision Care Associates <br/>45 Wells Street, Westerly, RI 02891</td>
+                                    <td>(401)596-3990</td>
+                                    <td>From: Aug 1, 2015</td>
+                                </tr>
+                                <tr>
+                                    <td>OB Gyn</td>
+                                    <td>Dr. Lisa Rameaka <br/>Center for Womens Health <br/>70 Kenyon Ave, Unit 103, Wakefield, RI 02879</td>
+                                    <td>(401)789-0661</td>
+                                    <td>From: 1999</td>
+                                </tr>
+                                <tr>
+                                    <td>Dermatologist</td>
+                                    <td>Nancy Staley <br/>Beach Street Dermatology <br/>55 Beach St., #9, Westerly, RI 02891</td>
+                                    <td>(401)348-2951</td>
+                                    <td>From: 2003</td>
+                                </tr>
+                                <tr>
+                                    <td>ENT</td>
+                                    <td>Dr. David Cameron <br/>ENT Associates of Westerly, Ltd <br/>17 Wells St. Ste. 201, Westerly, RI 02891</td>
+                                    <td>(401)596-2033</td>
+                                    <td>From: 2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Orthopedic Surgeon</td>
+                                    <td>Dr. Gaccione <br/>Soundview Orthopedic Associates <br/>101 Airport Road, Westerly, RI 02891</td>
+                                    <td>(401)596 0259</td>
+                                    <td>From: 2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Physical Therapist</td>
+                                    <td>Jan Chamberlain <br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
+                                    <td>(401)348-8112</td>
+                                    <td>From: 2009 </td>
+                                </tr>
+                                <tr>
+                                    <td>Dentist</td>
+                                    <td>Dr. Mourad Rahim<br/>Advance Aesthetic Dentistry <br/>85 Beach Street, Bldg D, Westerly, RI 02891</td>
+                                    <td>(401)596-7707</td>
+                                    <td>From: 2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastor</td>
+                                    <td>Reverend Dr. Wayne Eberly<br/>Dunns Corner Community Church Presbyterian <br/>221 Post Road, Westerly, RI 02891</td>
+                                    <td>(401)596-7707</td>
+                                    <td>From: 2016 </td>
+                                </tr>
+                                <tr>
+                                    <td>Yoga Instructor</td>
+                                    <td>Lou Gaccione<br/>Ashtanga Yoga RI <br/>26 High Street, Westerly, RI 02891</td>
+                                    <td>(401)932-5650</td>
+                                    <td>From: 2001</td>
+                                </tr>
+                                <tr>
+                                    <td>PCP</td>
+                                    <td>Dr. Louis Iovino <br/>LM Medical Group<br/>91 Voluntown Road, Pawcatuck, CT 06379</td>
+                                    <td>(806)599-5477</td>
+                                    <td>From: Jan 1, 2000 - TO: July 31, 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Physical Therapist</td>
+                                    <td>Mary Johnson<br/>Choice Physical Therapy <br/>105 South Street, Westerly, RI 02891</td>
+                                    <td>(401)596-1234</td>
+                                    <td>From: 2000 - To: 2001</td>
+                                </tr>
+                                <tr>
+                                    <td>Eye Doctory</td>
+                                    <td>Dr. Pearlman<br/>Choice Physical Therapy <br/>2115 Chandler Street, Providence, RI 02833</td>
+                                    <td>(401)876-2020</td>
+                                    <td>From: 1996 - To: 2015</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastor</td>
+                                    <td>Reverend Dr. Jim Glenn<br/>Dunns Corner Community Church Presbyterian <br/>221 Post Road, Westerly, RI 02891</td>
+                                    <td>(401)596-7707</td>
+                                    <td>From: 2001 - To: 2016</td>
+                                </tr>
+                            </tbody>
+                        </table></content>
+                        <content ID="CARETEAM_2_Condition">Condition:Tear of right rotator cuff (disorder)<br/>
+                            From October 1, 2016 to present
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Physical Therapist</td>
+                                        <td>Jan Chamberlain (Physical Therapist)<br/>NPI: add npi number here<br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
+                                        <td>(401)348-8112<br/>Add e-mail or direct address here.</td>
+                                        <td>From: October 1, 2016 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Orthopedic Surgeon</td>
+                                        <td>Dr. Gaccione <br/>Soundview Orthopedic Associates <br/>101 Airport Road, Westerly, RI 02891</td>
+                                        <td>(401)596 0259</td>
+                                        <td>From: November 10, 2016 to November 10, 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Personal Trainer</td>
+                                        <td>Dana Smith (Physical Therapy Assistant)<br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
+                                        <td>(401)596-3990</td>
+                                        <td>From: January 5, 2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Personal Trainer</td>
+                                        <td>Dana Smith (Personal Trainer)<br/>YMCA<br/>123 High Street, Westerly, RI 02891</td>
+                                        <td>(401)596-3990</td>
+                                        <td>From: January 5, 2017</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </content>
+                    </text>
+              </section> <!-- End of care team section-->
+            </component>
+        
+    </structuredBody>
+  </component>
+</ClinicalDocument>
