@@ -1,134 +1,168 @@
-            <component>
-                <section>
-                    <code code="CARETEAM" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team" />
-                    <!-- Other possible types of Care Teams include:
-                    
-                    Note: FHIR permits multiple codes to be used to designate the type of care team.  CDA offers less precision, and so only the XXXX Dimension code is used.
-                    -->
-                    <title mediaType="text/plain" representation="TXT" language="en-US">Care Team Information</title>
-                    <text>
-                        <content ID="CARETEAM_1_LONGITUDINAL">Longitudinal Care Team<br/>
-                        From 1996 to present
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>PCP</td>
-                                    <td>Dr. John Bergeron (Add specialty here)<br>NPI: add NPI number here</br><br/>Wood River Health Services <br/>823 Main St., Hope Valley, RI 02832</td>
-                                    <td>(401)539-2461 <br/>Add e-mail here</td>
-                                    <td>From: Aug 1, 2016</td>
-                                </tr>
-                                <tr>
-                                    <td>Eye Doctor</td>
-                                    <td>Dr. David Rivera <br/>Vision Care Associates <br/>45 Wells Street, Westerly, RI 02891</td>
-                                    <td>(401)596-3990</td>
-                                    <td>From: Aug 1, 2015</td>
-                                </tr>
-                                <tr>
-                                    <td>OB Gyn</td>
-                                    <td>Dr. Lisa Rameaka <br/>Center for Womens Health <br/>70 Kenyon Ave, Unit 103, Wakefield, RI 02879</td>
-                                    <td>(401)789-0661</td>
-                                    <td>From: 1999</td>
-                                </tr>
-                                <tr>
-                                    <td>Dermatologist</td>
-                                    <td>Nancy Staley <br/>Beach Street Dermatology <br/>55 Beach St., #9, Westerly, RI 02891</td>
-                                    <td>(401)348-2951</td>
-                                    <td>From: 2003</td>
-                                </tr>
-                                <tr>
-                                    <td>ENT</td>
-                                    <td>Dr. David Cameron <br/>ENT Associates of Westerly, Ltd <br/>17 Wells St. Ste. 201, Westerly, RI 02891</td>
-                                    <td>(401)596-2033</td>
-                                    <td>From: 2012</td>
-                                </tr>
-                                <tr>
-                                    <td>Orthopedic Surgeon</td>
-                                    <td>Dr. Gaccione <br/>Soundview Orthopedic Associates <br/>101 Airport Road, Westerly, RI 02891</td>
-                                    <td>(401)596 0259</td>
-                                    <td>From: 2011</td>
-                                </tr>
-                                <tr>
-                                    <td>Physical Therapist</td>
-                                    <td>Jan Chamberlain <br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
-                                    <td>(401)348-8112</td>
-                                    <td>From: 2009 </td>
-                                </tr>
-                                <tr>
-                                    <td>Dentist</td>
-                                    <td>Dr. Mourad Rahim<br/>Advance Aesthetic Dentistry <br/>85 Beach Street, Bldg D, Westerly, RI 02891</td>
-                                    <td>(401)596-7707</td>
-                                    <td>From: 2012</td>
-                                </tr>
-                                <tr>
-                                    <td>Pastor</td>
-                                    <td>Reverend Dr. Wayne Eberly<br/>Dunns Corner Community Church Presbyterian <br/>221 Post Road, Westerly, RI 02891</td>
-                                    <td>(401)596-7707</td>
-                                    <td>From: 2016 </td>
-                                </tr>
-                                <tr>
-                                    <td>Yoga Instructor</td>
-                                    <td>Lou Gaccione<br/>Ashtanga Yoga RI <br/>26 High Street, Westerly, RI 02891</td>
-                                    <td>(401)932-5650</td>
-                                    <td>From: 2001</td>
-                                </tr>
-                                <tr>
-                                    <td>PCP</td>
-                                    <td>Dr. Louis Iovino <br/>LM Medical Group<br/>91 Voluntown Road, Pawcatuck, CT 06379</td>
-                                    <td>(806)599-5477</td>
-                                    <td>From: Jan 1, 2000 - TO: July 31, 2016</td>
-                                </tr>
-                                <tr>
-                                    <td>Physical Therapist</td>
-                                    <td>Mary Johnson<br/>Choice Physical Therapy <br/>105 South Street, Westerly, RI 02891</td>
-                                    <td>(401)596-1234</td>
-                                    <td>From: 2000 - To: 2001</td>
-                                </tr>
-                                <tr>
-                                    <td>Eye Doctory</td>
-                                    <td>Dr. Pearlman<br/>Choice Physical Therapy <br/>2115 Chandler Street, Providence, RI 02833</td>
-                                    <td>(401)876-2020</td>
-                                    <td>From: 1996 - To: 2015</td>
-                                </tr>
-                                <tr>
-                                    <td>Pastor</td>
-                                    <td>Reverend Dr. Jim Glenn<br/>Dunns Corner Community Church Presbyterian <br/>221 Post Road, Westerly, RI 02891</td>
-                                    <td>(401)596-7707</td>
-                                    <td>From: 2001 - To: 2016</td>
-                                </tr>
-                            </tbody>
-                        </table></content>
-                        <content ID="CARETEAM_2_Condition">Condition:Tear of right rotator cuff (disorder)<br/>
-                            From October 1, 2016 to present
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Physical Therapist</td>
-                                        <td>Jan Chamberlain (Physical Therapist)<br/>NPI: add npi number here<br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
-                                        <td>(401)348-8112<br/>Add e-mail or direct address here.</td>
-                                        <td>From: October 1, 2016 </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Orthopedic Surgeon</td>
-                                        <td>Dr. Gaccione <br/>Soundview Orthopedic Associates <br/>101 Airport Road, Westerly, RI 02891</td>
-                                        <td>(401)596 0259</td>
-                                        <td>From: November 10, 2016 to November 10, 2016</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Personal Trainer</td>
-                                        <td>Dana Smith (Physical Therapy Assistant)<br/>First Physical Therapy <br/>85 Beach Street, #1, Westerly, RI 02891</td>
-                                        <td>(401)596-3990</td>
-                                        <td>From: January 5, 2017</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Personal Trainer</td>
-                                        <td>Dana Smith (Personal Trainer)<br/>YMCA<br/>123 High Street, Westerly, RI 02891</td>
-                                        <td>(401)596-3990</td>
-                                        <td>From: January 5, 2017</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </content>
-                    </text>
-              </section> <!-- End of care team section-->
-            </component>
-       
+<section>
+	<code code="CARETEAM" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team" />
+	<!-- Other possible types of Care Teams include:
+	Note: FHIR permits multiple codes to be used to designate the type of care team.  CDA offers less precision, and so only the XXXX Dimension code is used.
+	-->
+	<title mediaType="text/plain" representation="TXT" language="en-US">Care Team Information</title>
+	<text>
+		<table>
+			<!-- This example demonstrates all available data elements, implementers may select a subset or optimize for their workflow -->
+			<thead>
+				<tr>
+					<!-- Is this act/performer/functionCode?-->
+					<th>Role/Relationship </th>
+					<!-- Is this act/performer/assignedEntity/name?-->
+					<th>Name</th>
+					<!-- Is this act/performer/assignedEntity/code?-->
+					<th>Speciality</th>
+					<!-- Is this act/performer/assignedEntity/id?-->
+					<th>NPI (if applicable)</th>
+					<!-- Is this act/performer/assignedEntity/addr?-->
+					<th>Person Address</th>
+					<!-- Is this act/performer/assignedEntity/telecom?-->
+					<th>Person Contact Phone</th>
+					<!-- Is this act/performer/assignedEntity/telecom?-->
+					<th>Person Contact Email</th>
+					<!-- Is this act/performer/assignedEntity/representedOrganization/name?-->
+					<th>Organization Name</th>
+					<!-- Is this act/performer/assignedEntity/representedOrganization/addr?-->
+					<th>Organization Address</th>
+					<!-- Is this act/performer/assignedEntity/representedOrganization/telecom?-->
+					<th>Organization Phone</th>
+					<!-- Is this act/performer/assignedEntity/representedOrganization/telecom?-->
+					<th>Organization Email</th>
+					<!-- Is this act/performer/time?-->
+					<th>Service Start - Service End</th>
+				</tr>
+			</thead>
+			<tbody ID="CARETEAM_1_LONGITUDINAL">
+				<tr>
+					<td colwidth="100%" >
+							Longitudinal Care Team: From 1996 to present
+					</td>				
+				</tr>
+				<!-- Should the "longitidunal care team" organizer be composed of anyone who has ever provided care? --> 
+				<!-- We currently lean to have this be a select list (i.e. not comprenhensive) of relevant providers --> 
+				<tr>
+					<td>PCP</td>
+					<td>Dr. John Bergeron</td>
+					<td>Family Medicine</td>
+					<!-- Note that although they may conform to to Luhn algorithm all example NPIs are intended to be fictional. -->
+					<td>1245319599</td> 
+					<td>823 Main St. Suite 201, Hope Valley, RI 02832</td>
+					<td>(401)539-2461</td>
+					<td>jbergernon@direct.aclinic.org. </td>
+					<td>Wood River Health Services</td>
+					<td>823 Main St., Hope Valley, RI 02832</td>
+					<td>(401)539-2460</td>
+					<td>info@woodriverhealthservices.com</td>
+					<td>From: Aug 1, 2016</td>
+				</tr>
+				<tr>
+					<td>Obestetrics/Gynecology</td>
+					<td>Dr. Lisa Rameaka</td>
+					<td>Obestetrics/Gynecology</td>
+					<td>1245319607</td>
+					<td/>
+					<td/>
+					<td/>
+					<td>Center for Womens Health</td>
+					<td>70 Kenyon Ave, Unit 103, Wakefield, RI 02879</td>
+					<td>(401)789-0661</td>
+					<td/>
+					<td>From: 1999</td>
+				</tr>
+				<tr>
+					<td>Physical Therapist</td>
+					<td>Jan Chamberlain</td>
+					<td>Physical Therapy</td>
+					<td>1245319615</td>
+					<td/>
+					<td/>
+					<td>JanChamberlainPTN@gmail.com</td>
+					<td>First Physical Therapy</td>
+					<td>85 Beach Street, #1, Westerly, RI 02891</td>
+					<td>(401)348-8112</td>
+					<td/>
+					<td>From: 2009 </td>
+				</tr>
+				<tr>
+					<td>Pastor</td>
+					<td>Reverend Wayne Eberly</td>
+					<td/>
+					<td/>
+					<td/>
+					<td>(401)596-7707</td>
+					<td/>
+					<td>Dunns Corner Community Church Presbyterian</td>
+					<td>221 Post Road, Westerly, RI 02891</td>
+					<td/>
+					<td/>
+					<td>From: 2016 </td>
+				</tr>
+				<tr>
+					<td>PCP</td>
+					<td>Dr. Louis Iovino</td>
+					<td>Internal Medicine</td>
+					<td>1245319623</td>
+					<td/>
+					<td/>
+					<td/>
+					<td>LM Medical Group</td>
+					<td>91 Voluntown Road, Pawcatuck, CT 06379</td>
+					<td>(806)599-5477</td>
+					<td/>
+					<td>From: Jan 1, 2000 - TO: July 31, 2016</td>
+				</tr>
+			</tbody>
+			<tbody ID="CARETEAM_2_Condition_1">
+				<tr>
+					<td colwidth="100%">Condition Care Team: Tear of right rotator cuff (disorder) From October 1, 2016 to present</td>
+				</tr>
+				<tr>
+					<td>Physical Therapist</td>
+					<td>Jan Chamberlain</td>
+					<td>Physical Therapy</td>
+					<td>1245319615</td>
+					<td/>
+					<td/>
+					<td>JanChamberlainPTN@gmail.com</td>
+					<td>First Physical Therapy</td>
+					<td>85 Beach Street, #1, Westerly, RI 02891</td>
+					<td>(401)348-8112</td>
+					<td/>
+					<td>From: October 1, 2016</td>
+				</tr>
+				<tr>
+					<td>Orthopedic Surgeon</td>
+					<td>Dr. Salvidor Gaccione</td>
+					<td>Orthopedic Surgeon</td>
+					<td>1245319631</td>
+					<td/>
+					<td/>
+					<td>Soundview Orthopedic Associates</td>
+					<td>101 Airport Road, Westerly, RI 02891</td>
+					<td>(401)596-0259</td>
+					<td/>
+					<td/>
+					<td>From: November 10, 2016 to November 10, 2016</td>
+				</tr>
+				<tr>
+					<td>Personal Trainer</td>
+					<td>Dana Smith</td>
+					<td>Physical Therapy Assistant</td>
+					<td/>
+					<td>85 Beach Street, #1, Westerly, RI 02891</td>
+					<td/>
+					<td>DanaSmithFitness@gmail.com</td>
+					<td/>
+					<td/>
+					<td/>
+					<td/>
+					<td>From: January 5, 2017</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+</section>
+
