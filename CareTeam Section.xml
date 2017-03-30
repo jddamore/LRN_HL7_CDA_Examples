@@ -44,7 +44,7 @@
 			<tbody ID="CARETEAM_1_LONGITUDINAL">
 				<tr>
 					<td colspan="12" >
-							Longitudinal Care Team: From 1996 to present
+						Longitudinal Care Team: From 1996 to present
 					</td>				
 				</tr>
 				<!-- Should the "longitidunal care team" organizer be composed of anyone who has ever provided care? --> 
@@ -52,7 +52,7 @@
 				<tr>
 					<td>PCP</td>
 					<td>Dr. John Bergeron</td>
-					<td>Family Medicine</td>
+					<td>Internal Medicine (207R00000X)</td>
 					<!-- Note that although they may conform to to Luhn algorithm all example NPIs are intended to be fictional. -->
 					<td>1245319599</td> 
 					<td>823 Main St. Suite 201, Hope Valley, RI 02832</td>
@@ -67,7 +67,7 @@
 				<tr>
 					<td>Obestetrics/Gynecology</td>
 					<td>Dr. Lisa Rameaka</td>
-					<td>Obestetrics/Gynecology</td>
+					<td>Obstetrics/Gynecology (207V00000X)</td>
 					<td>1245319607</td>
 					<td/>
 					<td/>
@@ -81,7 +81,7 @@
 				<tr>
 					<td>Physical Therapist</td>
 					<td>Jan Chamberlain</td>
-					<td>Physical Therapy</td>
+					<td>Physical Therapy (225100000X)</td>
 					<td>1245319615</td>
 					<td/>
 					<td/>
@@ -95,7 +95,7 @@
 				<tr>
 					<td>Pastor</td>
 					<td>Reverend Wayne Eberly</td>
-					<td/>
+					<td>Counselor (101Y00000X)</td>
 					<td/>
 					<td/>
 					<td>(401)596-7707</td>
@@ -109,7 +109,7 @@
 				<tr>
 					<td>PCP</td>
 					<td>Dr. Louis Iovino</td>
-					<td>Internal Medicine</td>
+					<td>Internal Medicine (207R00000X)</td>
 					<td>1245319623</td>
 					<td/>
 					<td/>
@@ -128,7 +128,7 @@
 				<tr>
 					<td>Physical Therapist</td>
 					<td>Jan Chamberlain</td>
-					<td>Physical Therapy</td>
+					<td>Physical Therapy (225100000X)</td>
 					<td>1245319615</td>
 					<td/>
 					<td/>
@@ -142,7 +142,7 @@
 				<tr>
 					<td>Orthopedic Surgeon</td>
 					<td>Dr. Salvidor Gaccione</td>
-					<td>Orthopedic Surgeon</td>
+					<td>Orthopedic Surgeon (207XS0114X)</td>
 					<td>1245319631</td>
 					<td/>
 					<td/>
@@ -156,7 +156,7 @@
 				<tr>
 					<td>Personal Trainer</td>
 					<td>Dana Smith</td>
-					<td>Physical Therapy Assistant</td>
+					<td>Physical Therapy Assistant (225200000X)</td>
 					<td/>
 					<td>85 Beach Street, #1, Westerly, RI 02891</td>
 					<td/>
