@@ -6,12 +6,15 @@
 	<title mediaType="text/plain" representation="TXT" language="en-US">Care Team Information</title>
 	<text>
 		<table>
-			<!-- This example demonstrates all available data elements, implementers may select a subset or optimize for their workflow -->
+			<!-- This example demonstrates a relatively exhaustive list of data elements --> 
+			<!-- implementers may select a subset or optimize for their workflow -->
+			<!-- TODO: Create another example for more minimal list-->
 			<thead>
+				<!-- need to add id references inside <tr> -->
 				<tr>
-					<!-- Is this act/performer/functionCode?-->
+					<!-- Is this act/performer/functionCode? Inlcude in MIN-->
 					<th>Role/Relationship </th>
-					<!-- Is this act/performer/assignedEntity/name?-->
+					<!-- Is this act/performer/assignedEntity/name? Include in MIN-->
 					<th>Name</th>
 					<!-- Is this act/performer/assignedEntity/code?-->
 					<th>Speciality</th>
@@ -27,17 +30,20 @@
 					<th>Organization Name</th>
 					<!-- Is this act/performer/assignedEntity/representedOrganization/addr?-->
 					<th>Organization Address</th>
-					<!-- Is this act/performer/assignedEntity/representedOrganization/telecom?-->
+					<!-- Is this act/performer/assignedEntity/representedOrganization/telecom? Include in MIN-->
 					<th>Organization Phone</th>
 					<!-- Is this act/performer/assignedEntity/representedOrganization/telecom?-->
 					<th>Organization Email</th>
-					<!-- Is this act/performer/time?-->
+					<!-- Is this act/performer/time or act/effectiveTime? It's useful but may be hard for MIN-->
 					<th>Service Start - Service End</th>
+					<!-- do we record compensated vs. un-compensated? --> 
+					<!-- What to do with act/code ?? Maybe domain of clinical vs. social vs ?? -->
+					<!-- FHIR allow multiple codes for additional dimension of categorization, would this be different entryRelationships to act -->
 				</tr>
 			</thead>
 			<tbody ID="CARETEAM_1_LONGITUDINAL">
 				<tr>
-					<td colwidth="100%" >
+					<td colspan="12" >
 							Longitudinal Care Team: From 1996 to present
 					</td>				
 				</tr>
@@ -117,7 +123,7 @@
 			</tbody>
 			<tbody ID="CARETEAM_2_Condition_1">
 				<tr>
-					<td colwidth="100%">Condition Care Team: Tear of right rotator cuff (disorder) From October 1, 2016 to present</td>
+					<td colspan="12">Condition Care Team: Tear of right rotator cuff (disorder) From October 1, 2016 to present</td>
 				</tr>
 				<tr>
 					<td>Physical Therapist</td>
