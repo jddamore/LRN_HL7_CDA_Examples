@@ -51,73 +51,73 @@
 				<!-- We currently lean to have this be a select list (i.e. not comprenhensive) of relevant providers --> 
 				<tr>
 					<td>PCP</td>
-					<td>Dr. John Bergeron</td>
+					<td>Dr. Uel B. Better</td>
 					<td>Internal Medicine (207R00000X)</td>
 					<!-- Note that although they may conform to to Luhn algorithm all example NPIs are intended to be fictional. -->
 					<td>1245319599</td> 
-					<td>823 Main St. Suite 201, Hope Valley, RI 02832</td>
+					<td>100 Main St. Suite 100, Hope Valley, RI 02832</td>
 					<td>(401)539-2461</td>
-					<td>jbergernon@direct.aclinic.org. </td>
-					<td>Wood River Health Services</td>
-					<td>823 Main St., Hope Valley, RI 02832</td>
-					<td>(401)539-2460</td>
-					<td>info@woodriverhealthservices.com</td>
+					<td>ubbetter@direct.aclinic.org. </td>
+					<td>Hope Woods Health Services</td>
+					<td>823 Main St., Hope Woods, RI 02832</td>
+					<td>(401)567-2345</td>
+					<td>info@hopewoodshealthservices.com</td>
 					<td>From: Aug 1, 2016</td>
 				</tr>
 				<tr>
-					<td>Obestetrics/Gynecology</td>
-					<td>Dr. Lisa Rameaka</td>
+					<td>Gynecologist</td>
+					<td>Dr. Fiora W. Omen</td>
 					<td>Obstetrics/Gynecology (207V00000X)</td>
 					<td>1245319607</td>
 					<td/>
 					<td/>
 					<td/>
 					<td>Center for Womens Health</td>
-					<td>70 Kenyon Ave, Unit 103, Wakefield, RI 02879</td>
-					<td>(401)789-0661</td>
+					<td>70 Healthcare Ave, Unit 100, Wakefield, RI 02879</td>
+					<td>(401)789-1234</td>
 					<td/>
 					<td>From: 1999</td>
 				</tr>
 				<tr>
 					<td>Physical Therapist</td>
-					<td>Jan Chamberlain</td>
+					<td>Beatrice Strong</td>
 					<td>Physical Therapy (225100000X)</td>
 					<td>1245319615</td>
 					<td/>
 					<td/>
-					<td>JanChamberlainPTN@gmail.com</td>
-					<td>First Physical Therapy</td>
-					<td>85 Beach Street, #1, Westerly, RI 02891</td>
-					<td>(401)348-8112</td>
-					<td/>
+					<td>BeStrongPTN@FirstChoicePhysical.Direct.MD</td>
+					<td>First Choice Physical Therapy</td>
+					<td>85 Ocean Street, #1, Westerly, RI 02891</td>
+					<td>(401)543-1111</td>
+					<td>Admin@FirstChoicePhysical.Direct.MD</td>
 					<td>From: 2009 </td>
 				</tr>
 				<tr>
 					<td>Pastor</td>
-					<td>Reverend Wayne Eberly</td>
+					<td>Reverend Will Namaste</td>
 					<td>Counselor (101Y00000X)</td>
 					<td/>
 					<td/>
-					<td>(401)596-7707</td>
-					<td/>
-					<td>Dunns Corner Community Church Presbyterian</td>
-					<td>221 Post Road, Westerly, RI 02891</td>
-					<td/>
-					<td/>
+					<td>(987)123-1234</td>
+					<td>Will.Namaste123@gmail.com</td>
+					<td>Four Corners Community Church Presbyterian</td>
+					<td>221 New Town Road, Westerly, RI 02891</td>
+					<td>(401)543-7777</td>
+					<td>Office@FCCCP.org</td>
 					<td>From: 2016 </td>
 				</tr>
 				<tr>
 					<td>PCP</td>
-					<td>Dr. Louis Iovino</td>
+					<td>Dr. Patricia Primary</td>
 					<td>Internal Medicine (207R00000X)</td>
 					<td>1245319623</td>
 					<td/>
 					<td/>
 					<td/>
-					<td>LM Medical Group</td>
+					<td>ML Medical Group</td>
 					<td>91 Voluntown Road, Pawcatuck, CT 06379</td>
 					<td>(806)599-5477</td>
-					<td/>
+					<td>MLMG@MLMG.Direct.MD</td>
 					<td>From: Jan 1, 2000 - TO: July 31, 2016</td>
 				</tr>
 			</tbody>
@@ -127,44 +127,44 @@
 				</tr>
 				<tr>
 					<td>Physical Therapist</td>
-					<td>Jan Chamberlain</td>
+					<td>Beatrice Strong</td>
 					<td>Physical Therapy (225100000X)</td>
 					<td>1245319615</td>
 					<td/>
 					<td/>
-					<td>JanChamberlainPTN@gmail.com</td>
-					<td>First Physical Therapy</td>
-					<td>85 Beach Street, #1, Westerly, RI 02891</td>
-					<td>(401)348-8112</td>
-					<td/>
-					<td>From: October 1, 2016</td>
+					<td>BeStrongPTN@FirstChoicePhysical.Direct.MD</td>
+					<td>First Choice Physical Therapy</td>
+					<td>85 Ocean Street, #1, Westerly, RI 02891</td>
+					<td>(401)543-1111</td>
+					<td>Admin@FirstChoicePhysical.Direct.MD</td>
+					<td>From: 2009 </td>
 				</tr>
 				<tr>
 					<td>Orthopedic Surgeon</td>
-					<td>Dr. Salvidor Gaccione</td>
+					<td>Dr. S. Teddy Hands</td>
 					<td>Orthopedic Surgeon (207XS0114X)</td>
 					<td>1245319631</td>
 					<td/>
 					<td/>
-					<td>Soundview Orthopedic Associates</td>
-					<td>101 Airport Road, Westerly, RI 02891</td>
-					<td>(401)596-0259</td>
+					<td>Bayview Orthopedic Associates</td>
+					<td>123 Airport Ave, Westerly, RI 02891</td>
+					<td>(401)543-0123</td>
 					<td/>
 					<td/>
 					<td>From: November 10, 2016 to November 10, 2016</td>
 				</tr>
 				<tr>
 					<td>Personal Trainer</td>
-					<td>Dana Smith</td>
+					<td>Beau D. Stretch</td>
 					<td>Physical Therapy Assistant (225200000X)</td>
 					<td/>
-					<td>85 Beach Street, #1, Westerly, RI 02891</td>
+					<td>YMCA, 123 Healthy Way, Westerly, RI 02891</td>
 					<td/>
-					<td>DanaSmithFitness@gmail.com</td>
-					<td/>
-					<td/>
-					<td/>
-					<td/>
+					<td>DBStretch@FirstChoicePhysical.Direct.MD</td>
+					<td>First Choice Physical Therapy</td>
+					<td>85 Ocean Street, #1, Westerly, RI 02891</td>
+					<td>(401)543-1111</td>
+					<td>Admin@FirstChoicePhysical.Direct.MD</td>
 					<td>From: January 5, 2017</td>
 				</tr>
 			</tbody>
